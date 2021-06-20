@@ -1,0 +1,92 @@
+package: QFN
+pins: 48
+pitch: 0.4
+title: nRF52832
+width: 6
+height: 6
+scale: 90
+textscale: 8
+
+category:
+  - regex:  "VDD|DEC"
+    color: "red"
+    type: "power"
+  - regex:  "VSS"
+    color: "blue"
+    type: "power"
+  - regex: "XC1|ANT|DCC"
+    color: "green"
+    type: "input"
+  - regex: "XC2"
+    color: "green"
+    type: "output"
+  - regex: "NC"
+    color: "gray"
+    type: "io"
+  - regex: ".*"
+    color: "black"
+    type: "io"
+
+top:
+  anchor: right
+  pins:
+      - P0.25
+      - P0.26
+      - P0.27
+      - P0.28
+      - P0.29
+      - P0.30
+      - P0.31
+      - NC
+      - VSS
+      - DEC4
+      - DCC
+      - VDD
+
+left:
+  anchor: top
+  pins:
+    - DEC1
+    - P0.00
+    - P0.01
+    - P0.02
+    - P0.03
+    - P0.04
+    - P0.05
+    - P0.06
+    - P0.07
+    - P0.08
+    - P0.09
+    - P0.10
+
+bottom:
+  anchor: right
+  pins:
+    - P0.21
+    - P0.20
+    - P0.19
+    - P0.18
+    - P0.17
+    - P0.16
+    - P0.15
+    - P0.14
+    - P0.13
+    - P0.12
+    - P0.11
+    - VDD
+
+right:
+  anchor: top
+  pins:
+    - VDD
+    - XC2
+    - XC1
+    - DEC3
+    - DEC2
+    - VSS
+    - ANT
+    - P0.24
+    - P0.23
+    - P0.22
+    - SWDIO
+    - SWDCLK

@@ -25,7 +25,7 @@
 ##
 ######################################################################
 
-DOC=memo
+DOC=why_learn_dic
 
 latex:
 	pdflatex ${DOC}
@@ -43,3 +43,10 @@ clean:
 	-rm *.ttt
 	-rm *.dvi
 	-rm *.pdf
+
+#- Clone https://github.com/wulffern/cicpacgen.git and run pip install -e .
+qfn:
+	cicpacgen --pdf qfn48.yaml
+
+runtex:
+	cd ../ ; docker run --rm -it -v `pwd`:/latex wulffern/texlive:0.1.0 bash
