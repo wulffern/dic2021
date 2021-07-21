@@ -1,0 +1,6 @@
+.DS_Store
+.idea
+*.log
+tmp/
+*.aux
+auctex-auto
