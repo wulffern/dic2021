@@ -74,7 +74,7 @@ header:  Helvetica
 | 43   | WH 9                    | Sequencing                                                                | WH 10                   | Datapaths - Adders                   |
 | 44   | WH 10                   | Datapaths - Multipliers, Counters                                         | WH 11                   | Memories                             |
 | 45   | WH 12                   | Packaging                                                                 | WH 14                   | Test                                 |
-| 46   |                         | Guest lecture?                                                            |                         |                                      |
+| 46   |                         | Guest lecture - Nordic Semiconductor                                      |                         |                                      |
 | 47   | CJM                     | Recap of CJM                                                              | WH                      | Recap of WH                          |
 
 ---
