@@ -264,3 +264,8 @@ See [demo video](https://youtu.be/SpHw1MB3fus)
 ---
 
 # Expect that you will spend at least $$2\pi$$ times more time than planned *(mostly due to EDA issues)* 
+
+
+---
+
+Homework for friday: watch https://youtu.be/23fTB3hG5cA
