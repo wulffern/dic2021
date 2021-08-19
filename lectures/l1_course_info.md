@@ -316,3 +316,7 @@ See [demo video](https://youtu.be/SpHw1MB3fus)
 
 # Memo time
 [https://github.com/wulffern/dic2021/tree/main/2021-06-13\_why\_integrated_circuits](https://github.com/wulffern/dic2021/blob/main/2021-06-13_why_integrated_circuits/why_learn_dic.pdf)
+
+---
+
+Homework for friday: watch https://youtu.be/23fTB3hG5cA
