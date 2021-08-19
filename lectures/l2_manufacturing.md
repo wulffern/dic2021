@@ -44,6 +44,9 @@ header:  Helvetica
 
 ---
 
+# Printed Circuit Board
+
+---
 
 [.column]
 
@@ -52,7 +55,8 @@ header:  Helvetica
 
 [.column]
 
-# Printed Circuit Board
+---
+
 - Many, many vendors 
 - I know Ph.D that students have used [PCBway](https://www.pcbway.com/)
 - Omega Verksted probably know best option
@@ -61,6 +65,8 @@ header:  Helvetica
 ---
 
 # Package and Test
+
+---
 
 ![left 100%](../media/MQFP.png)
 
@@ -84,13 +90,12 @@ Usually done by OSATS (Outsourced Semiconductor Assembly and Test)
 
 # Die
 
+---
+
 - TSMC, Globalfoundries, Samsung, UMC, SMIC ...
 - Very, very, very, very expensive to make
 - But, [Sam Zelof](https://www.youtube.com/watch?v=IS5ycm7VfXg&t=3), made one i
   his garage
-
-
-
 
 
 <sub><sub>Picture: nRF51822 (https://s.zeptobars.com/nRF51822.jpg)</sub></sub> 
@@ -161,7 +166,15 @@ Seems like the highest known band gap is about 13.5 eV (Lithium Fluoride)
 
 ---
 
+# Process steps 
+
+---
+
 ![fit](https://s.zeptobars.com/nRF51822.jpg) 
+
+---
+
+# How does foundry know what to make?
 
 ---
 
@@ -169,15 +182,93 @@ Seems like the highest known band gap is about 13.5 eV (Lithium Fluoride)
 
 ![](../media/klayout.png) 
 
+
+---
+
+# Path to GDSII
+
 ---
 
 [.column]
-# Analog on top
-
+#[fit] Analog on top
 
 
 [.column]
 
-# Digital on top
+#[fit] Digital on top
+
+---
+
+[.column]
+#[fit] Analog top layout
+
+
+[.column]
+
+#[fit] Place and route
+
+---
+[.column]
+#[fit] Analog extracted simulation
+
+- Did parasitics (RLC) screw something up
+- Does it still work?
+
+[.column]
+
+#[fit] Netlist simulation
+
+- Timing
+- Setup/Hold times
+- Functionality
+
+---
+
+[.column]
+#[fit] Analog Cell Layout
+
+- Polygon pushing
+- Power routing
+- Expensive tools: Cadence Virtuoso
+- Need Process Design Kit (PDK) from foundry
+- Free tools ([magic](http://opencircuitdesign.com/magic/)) exists, but what about PDK??
+
+[.column]
+
+#[fit] Synthesis
+
+- Translate Verilog or SystemVerilog (or VHDL) to netlist
+- Expensive tools
+- But [yosys](http://www.clifford.at/yosys/) is pretty good (and free)
+
+---
+
+[.column]
+#[fit] Analog cell layout
+
+- Transistors
+- Resistors
+- Capacitors
+- (Inductors)
+- (Diodes)
+- (Silicon Rectifiers)
+
+[.column]
+
+#[fit] Digital standard cell design layout
+
+- standard cells (INV, AND, OR, NOR, NAND, XOR, DFF)
+
+---
+
+[.column]
+#[fit] Analog Schematic simulation
+
+- Does it work over process, voltage and corners?
+
+
+[.column]
+
+#[fit] Place and route
 
 ---
