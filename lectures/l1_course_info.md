@@ -9,13 +9,17 @@ header:  Helvetica
 # Design of Integrated Circuits
 
 ---
+
 # Goal for today
 * Who are we
 * Introduce Course
 * Introduce Exercises
 * Introduce Project
 * Introduce Software
-* What will we focus on in this course
+* Try to convince you why you should learn about ICs
+* Introduce how we're going to learn it
+* Why do we make ICs?
+* Introduce what skills you'll learn 
 
 ---
 
@@ -40,6 +44,7 @@ header:  Helvetica
 #[fit] Course
 
 ---
+
 # [Description](https://www.ntnu.no/studier/emner/TFE4152#tab=omEmnet)
 # [Time schedule] (https://tp.uio.no/ntnu/timeplan/?id=TFE4152&sem=21h&sort=form&type=course)
 
@@ -65,9 +70,9 @@ header:  Helvetica
 | 34   |                         | Introduction, what are we going to do in this course. Why do you need it? | WH 1                    | Manufacturing of integrated circuits |
 | 35   | CJM 1.1                 | pn Junctions                                                              | CJM 1.2 WH 1.3, 2.1-2.4 | Mosfet transistors                   |
 | 36   | CJM 1.2 WH 1.3, 2.1-2.4 | Mosfet transistors                                                        | CJM 1.3 - 1.6           | Modeling and passive devices         |
-| 37   | CJM 2 WH 1.5 WH 15      | Layout                                                                    | CJM 3.1, 3.5, 3.6       | Current mirrors                      |
+| 37   | CJM 2 WH 1.5 WH 15      | Guest Lecture - Sony                                                      | CJM 3.1, 3.5, 3.6       | Current mirrors                      |
 | 38   | CJM 3.2, 3.3,3.4 3.7    | Amplifiers                                                                | CJM                     | SPICE simulation                     |
-| 39   |                         | Guest lecture?                                                            |                         | Verilog                              |
+| 39   |                         | Layout                                                                    |                         | Verilog                              |
 | 40   | WH 1.4 WH 2.5           | CMOS Logic                                                                | WH 3                    | Speed                                |
 | 41   | WH 4                    | Power                                                                     | WH 5                    | Wires                                |
 | 42   | WH 6                    | Scaling Reliability and Variability                                       | WH 8                    | Gates                                |
@@ -132,6 +137,7 @@ header:  Helvetica
 ![inline](../media/isscc.png)
 
 ---
+
 # Goal
 Be inspired by the paper, and design a similar system. 
 
@@ -146,6 +152,7 @@ Design analog circuits in SPICE and digital circuits in SystemVerilog.
 - Report documenting that the circuits (analog and digital) work as designed
 
 ---
+
 # Things it's OK to ignore
 
 - Transistor corners
@@ -209,6 +216,7 @@ project/
 #[fit] Software
 
 ---
+
 You may use what ever you want, but exercises and project have been developed using AIM-Spice, ngspice, iverilog, and GKTwave on Ubuntu linux
 
 **SPICE**
@@ -220,6 +228,7 @@ You may use what ever you want, but exercises and project have been developed us
 - gtkwave  [GTKWave](http://gtkwave.sourceforge.net), version 3.3.104
 
 ---
+
 # Option 1 : Install everything on your computer
 
 The software can be installed on Windows, Mac, and Linux
@@ -232,6 +241,7 @@ The software can be installed on Windows, Mac, and Linux
 
 
 ---
+
 # Option 2 : Use login.stud.ntnu.no
 
 | Pros                                     | Cons                              |
@@ -242,6 +252,7 @@ The software can be installed on Windows, Mac, and Linux
 
 
 ---
+
 # Option 2: Quickstart for login.stud.ntnu.no
 
 ssh to login.stud.ntnu.no, run 
@@ -257,6 +268,7 @@ ssh -c aes128-ctr -YC -o "ForwardX11Timeout 4W" <username>@login.stud.ntnu.no
 ```
 
 ---
+
 # Option 3: Ubuntu on docker image with VNC frontend
 
 Run Ubuntu linux on your PC via docker and use a VNC client to connect
@@ -269,6 +281,7 @@ Run Ubuntu linux on your PC via docker and use a VNC client to connect
 
 
 ---
+
 # dicex and ciceda
 Design of Integrated Circuits exercises (dicex) are the testbenches and model files you'll need 
 [https://github.com/wulffern/dicex](https://github.com/wulffern/dicex)
@@ -304,13 +317,6 @@ See [demo video](https://youtu.be/SpHw1MB3fus)
 
 # Expect that you will spend at least $$2\pi$$ times more time than planned *(mostly due to EDA issues)* 
 
----
-
-# Goal for today
-* Try to convince you why you should learn about ICs
-* Introduce how we're going to learn it
-* Why do we make ICs?
-* Introduce what skills you'll learn  
 
 ---
 
@@ -319,9 +325,6 @@ See [demo video](https://youtu.be/SpHw1MB3fus)
 
 ---
 
----
-
-
 #[fit] Why learn Design of Integrated Circuits?
 
 ---
@@ -329,8 +332,10 @@ See [demo video](https://youtu.be/SpHw1MB3fus)
 ![](https://www.extremetech.com/wp-content/uploads/2013/08/bell-labs-first-transistor-640x573.jpg)
 
 ---
+
 ![](https://www.chiphistory.org/chc_upload/content/jpg/7/1499079245/1499079245.jpg)
 <!--1961: First Monolithic Silicon IC Chip. Invented by Robert Noyce, Fairchild-->
+
 ---
 
 Virtex UltraScale+ VU19P (35 billion transistors)
@@ -369,6 +374,7 @@ nRF51, nRF52, nRF53 series devices from Nordic Semiconductor are all the same ty
 -- the devising or choosing of names for things, especially in a science or other discipline.
 
 ---
+
 # Zen of IC design (stole from Zen of Python)
 
 Beautiful is better than ugly.
@@ -387,9 +393,6 @@ If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 
 ---
-
-
-
 
 Homework for friday: watch https://youtu.be/23fTB3hG5cA
 
