@@ -8,6 +8,9 @@ header:  Helvetica
 ## TFE4152 - Lecture 1 
 # Design of Integrated Circuits
 
+
+## [Source](https://github.com/wulffern/dic2021/blob/main/lectures/l1_course_info.md)
+
 ---
 
 # Goal for today
@@ -101,11 +104,26 @@ header:  Helvetica
 ---
 
 # Facts
-- 6 exercises on blackboard (somewhat modified from last year)
-- last years exercise and solutions on blackboard
+- 4 exercises on blackboard (somewhat modified from last year), 1 more to come, exercise 6 is special
+- last years exercise and solutions on blackboard (soon)
 - must have 4 of 6 exercises approved
 - strict deadline (Friday XX 23:59)
 - no second chances
+
+---
+
+# Exercise 6: [Maze](https://github.com/wulffern/dicex/tree/main/maze) in SystemVerilog
+
+![inline](../media/maze.gif)
+
+
+---
+
+# Exercise 6: Maze
+1. Explain how the mazeEscaper.v works
+2. Make a soluition that is better
+3. Upload PDF with explanation and verilog to Blackboard
+4. Send mazeEscaper.v as attachment to carstenw@ntnu.no with subject TFE4152-Comp-Maze
 
 ---
 
@@ -118,7 +136,7 @@ header:  Helvetica
 | 2021-10-08 | 40   | Current Mirrors and Amplifiers |
 | 2021-10-22 | 42   | CMOS logic                     |
 | 2021-11-05 | 44   | Logic circuits                 |
-| 2021-11-19 | 46   | Exam review
+| 2021-11-19 | 46   | Maze
 
 ---
 
@@ -214,19 +232,41 @@ project/
 
 ---
 
+# Proposed plan
+
+| Week | Plan                            |
+|:------:|:---------------------------------|
+| 34   | Register group                  |
+| 35   | Read and understand paper       |
+| 36   | Sketch what you want to do      |
+| 37   | Write theory chapter  in report |
+| 38   | Design & simulation             |
+| 39   | Design & simulation             |
+| 40   | Design & simulation             |
+| 41   | Design & simulation             |
+| 42   | Verification                    |
+| 43   | Verification                    |
+| 44   | Write report                    |
+| 45   | Write report                    |
+| 46   | **Deadline**                    |
+
+
+---
+
 #[fit] Software
 
 ---
 
-You may use what ever you want, but exercises and project have been developed using AIM-Spice, ngspice, iverilog, and GKTwave on Ubuntu linux
+You may use what ever you want, but exercises and project have been developed using AIM-Spice, ngspice, iverilog, and GKTwave on Ubuntu linux 20.10
 
 **SPICE**
 - AIM-Spice [aimspice.com](http://aimspice.com) (Used for exercises)
 - NGSpice [ngspice](http://ngspice.sourceforge.net) , version 34 (Recommended for project)
 
 **SystemVerilog**
-- iverilog [Icarus Verilog](http://iverilog.icarus.com), minimum v11_0
+- iverilog [Icarus Verilog](http://iverilog.icarus.com), version v11_0
 - gtkwave  [GTKWave](http://gtkwave.sourceforge.net), version 3.3.104
+- ( yosys [Yosys](http://www.clifford.at/yosys/), version 0.9 )
 
 ---
 
@@ -240,7 +280,6 @@ The software can be installed on Windows, Mac, and Linux
 |                                   | Compile from source  |
 |                                   | No support from us on installing   |
 
-
 ---
 
 # Option 2 : Use login.stud.ntnu.no
@@ -248,8 +287,7 @@ The software can be installed on Windows, Mac, and Linux
 | Pros                                     | Cons                              |
 | :--                                      | ---:                              |
 | I've tested with login.ansatt.ntnu.no    | GUI windows require a bit of work |
-| TAs have tested with login.stud.ntnu.no  | Online                            |
-| Similar to real world (desktop + server) |                                   |
+| Similar to real world (desktop + server) | Online                            |
 
 
 ---
@@ -316,8 +354,11 @@ See [demo video](https://youtu.be/SpHw1MB3fus)
 
 ---
 
-# Expect that you will spend at least $$2\pi$$ times more time than planned *(mostly due to EDA issues)* 
+# Expect that you will spend at least $$2\pi$$ times more time than planned *(mostly due to software issues)* 
 
+---
+
+# Questions?
 
 ---
 
@@ -330,27 +371,31 @@ See [demo video](https://youtu.be/SpHw1MB3fus)
 
 ---
 
-![](https://www.extremetech.com/wp-content/uploads/2013/08/bell-labs-first-transistor-640x573.jpg)
+![inline](https://www.extremetech.com/wp-content/uploads/2013/08/bell-labs-first-transistor-640x573.jpg)
+
+<sub><sub>1947: First transistor. Invented by Brattain, Bardeen and Shockley, Bell labs</sub></sub>
 
 ---
 
-![](https://www.chiphistory.org/chc_upload/content/jpg/7/1499079245/1499079245.jpg)
-<!--1961: First Monolithic Silicon IC Chip. Invented by Robert Noyce, Fairchild-->
+![inline](https://www.chiphistory.org/chc_upload/content/jpg/7/1499079245/1499079245.jpg)
+
+<sub><sub>1961: First Monolithic Silicon IC Chip. Invented by Robert Noyce, Fairchild</sub></sub>
 
 ---
 
-Virtex UltraScale+ VU19P (35 billion transistors)
-![original](https://cdn.mos.cms.futurecdn.net/DDWfbHxyrYER875RdBTYXC-970-80.jpg)
-
----
-
-![](../media/vertex_ultrascale.png)
-
----
-
-![](../media/unit_shipments_2021.png)
+![inline](../media/unit_shipments_2021.png)
 
 <sub><sub>https://www.statista.com/statistics/802632/world-semiconductor-shipments/</sub></sub>
+
+---
+
+# Virtex UltraScale+ VU19P (35 billion transistors)
+
+![inline](https://cdn.mos.cms.futurecdn.net/DDWfbHxyrYER875RdBTYXC-970-80.jpg)
+
+---
+
+![inline](../media/virtex_ultrascale.png)
 
 ---
 
@@ -365,11 +410,15 @@ Virtex UltraScale+ VU19P (35 billion transistors)
 nRF51, nRF52, nRF53 series devices from Nordic Semiconductor are all the same type of tool.
 
 * Add connectivity (Bluetooth, Zigbee, custom radio protocol) to your product.
-* Provide a microcontroller (CPU + peripherals like interfaces (SPI,UART,ADC,COMP,I2C)) to process information, and interface with the world. 
+* Provide a microcontroller; CPU + peripherals like interfaces (SPI, UART, ADC, COMP, I2C) to process information, and interface with the world. 
 
 ---
 
-![](../media/2021-06-13_why_integrated_circuits/qfn48.pdf)
+![inline](../2021-06-13_why_integrated_circuits/qfn48.pdf)
+
+---
+
+![inline](../media/nrf5340.png)
 
 ---
 
@@ -377,17 +426,17 @@ nRF51, nRF52, nRF53 series devices from Nordic Semiconductor are all the same ty
 
 ---
 
-- Firmware, signal processing, algorithms
-- Infrastructure - Power management, reset, bias, clocks
-- Domains - CPUs, peripherals, memories, bus systems
-- Sub-systems - Radio’s, analog-to-digital converters, comparators
-- Blocks - Analog Radio, Digital radio baseband
-- Modules - Transmitter, receiver, de-modulator, timing
-recovery
-- Designs - Opamps, **amplifiers**,  **current-mirrors**, **adders**,,
+- Firmware: signal processing, algorithms
+- Infrastructure: Power management, reset, bias, clocks
+- Domains: CPUs, peripherals, memories, bus systems
+- Sub-systems: Radio’s, analog-to-digital converters, comparators
+- Blocks: Analog Radio, Digital radio baseband
+- Modules: Transmitter, receiver, de-modulator, timing
+recovery, **state machines**
+- Designs: Opamps, **amplifiers**,  **current-mirrors**, **adders**,
 random access memory blocks, **standard cells**
-- Tools - schematic, layout, synthesis, place-and-route, **verilog**, **netlist** 
-- Physics - **transistor**, **pn junctions**, quantum mechanics
+- Tools: schematic, layout, synthesis, place-and-route, **verilog**, **netlist** 
+- Physics: **transistor**, **pn junctions**, quantum mechanics
 
 ---
 
@@ -423,6 +472,8 @@ random access memory blocks, **standard cells**
 
 ---
 
-Homework for friday: watch https://youtu.be/23fTB3hG5cA
+# Homework for Friday 
+
+# [Sam Zeloof Home Chip Fab](https://youtu.be/23fTB3hG5cA)
 
 ---
