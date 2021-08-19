@@ -46,7 +46,8 @@ header:  Helvetica
 ---
 
 # [Description](https://www.ntnu.no/studier/emner/TFE4152#tab=omEmnet)
-# [Time schedule] (https://tp.uio.no/ntnu/timeplan/?id=TFE4152&sem=21h&sort=form&type=course)
+
+# [Time schedule](https://tp.uio.no/ntnu/timeplan/?id=TFE4152&sem=21h&sort=form&type=course)
 
 ---
 
