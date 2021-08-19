@@ -16,10 +16,10 @@ header:  Helvetica
 * Introduce Exercises
 * Introduce Project
 * Introduce Software
-* Try to convince you why you should learn about ICs
-* Introduce how we're going to learn it
 * Why do we make ICs?
 * Introduce what skills you'll learn 
+* Introduce how we're going to learn it
+
 
 ---
 
@@ -325,7 +325,7 @@ See [demo video](https://youtu.be/SpHw1MB3fus)
 
 ---
 
-#[fit] Why learn Design of Integrated Circuits?
+#[fit] Why do we make ICs?
 
 ---
 
@@ -357,7 +357,9 @@ Virtex UltraScale+ VU19P (35 billion transistors)
 
 ---
 
-# Purpose
+#[fit] Purpose
+
+---
 
 nRF51, nRF52, nRF53 series devices from Nordic Semiconductor are all the same type of tool.
 
@@ -370,12 +372,38 @@ nRF51, nRF52, nRF53 series devices from Nordic Semiconductor are all the same ty
 
 ---
 
+#[fit] Skills
+
+---
+
+- Firmware, signal processing, algorithms
+- Infrastructure - Power management, reset, bias, clocks
+- Domains - CPUs, peripherals, memories, bus systems
+- Sub-systems - Radio’s, analog-to-digital converters, comparators
+- Blocks - Analog Radio, Digital radio baseband
+- Modules - Transmitter, receiver, de-modulator, timing
+recovery
+- Designs - Opamps, **amplifiers**,  **current-mirrors**, **adders**,,
+random access memory blocks, **standard cells**
+- Tools - schematic, layout, synthesis, place-and-route, **verilog**, **netlist** 
+- Physics - **transistor**, **pn junctions**, quantum mechanics
+
+---
+
+#[fit] How will we learn it?
+
+---
+
+#[fit] We need to build a solid foundation, so it's bottom up
+
+---
+
 > Nomenclature
 -- the devising or choosing of names for things, especially in a science or other discipline.
 
 ---
 
-# Zen of IC design (stole from Zen of Python)
+# Zen of IC design (stolen from Zen of Python)
 
 Beautiful is better than ugly.
 Explicit is better than implicit.
@@ -396,3 +424,4 @@ If the implementation is easy to explain, it may be a good idea.
 
 Homework for friday: watch https://youtu.be/23fTB3hG5cA
 
+---
