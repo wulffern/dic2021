@@ -70,9 +70,9 @@ header:  Helvetica
 | 34   |                         | Introduction, what are we going to do in this course. Why do you need it? | WH 1                    | Manufacturing of integrated circuits |
 | 35   | CJM 1.1                 | pn Junctions                                                              | CJM 1.2 WH 1.3, 2.1-2.4 | Mosfet transistors                   |
 | 36   | CJM 1.2 WH 1.3, 2.1-2.4 | Mosfet transistors                                                        | CJM 1.3 - 1.6           | Modeling and passive devices         |
-| 37   | CJM 2 WH 1.5 WH 15      | Guest Lecture - Sony                                                      | CJM 3.1, 3.5, 3.6       | Current mirrors                      |
+| 37   |                         | Guest Lecture - Sony                                                      | CJM 3.1, 3.5, 3.6       | Current mirrors                      |
 | 38   | CJM 3.2, 3.3,3.4 3.7    | Amplifiers                                                                | CJM                     | SPICE simulation                     |
-| 39   |                         | Layout                                                                    |                         | Verilog                              |
+| 39   |  CJM 2 WH 1.5 WH 15     | Layout                                                                    |                         | Verilog                              |
 | 40   | WH 1.4 WH 2.5           | CMOS Logic                                                                | WH 3                    | Speed                                |
 | 41   | WH 4                    | Power                                                                     | WH 5                    | Wires                                |
 | 42   | WH 6                    | Scaling Reliability and Variability                                       | WH 8                    | Gates                                |
