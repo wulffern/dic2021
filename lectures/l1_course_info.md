@@ -265,7 +265,74 @@ See [demo video](https://youtu.be/SpHw1MB3fus)
 
 # Expect that you will spend at least $$2\pi$$ times more time than planned *(mostly due to EDA issues)* 
 
+---
+
+
+#[fit] Why learn Design of Integrated Circuits?
 
 ---
 
-Homework for friday: watch https://youtu.be/23fTB3hG5cA
+![](https://www.extremetech.com/wp-content/uploads/2013/08/bell-labs-first-transistor-640x573.jpg)
+
+---
+![](https://www.chiphistory.org/chc_upload/content/jpg/7/1499079245/1499079245.jpg)
+<!--1961: First Monolithic Silicon IC Chip. Invented by Robert Noyce, Fairchild-->
+---
+
+Virtex UltraScale+ VU19P (35 billion transistors)
+![original](https://cdn.mos.cms.futurecdn.net/DDWfbHxyrYER875RdBTYXC-970-80.jpg)
+
+---
+
+![](../media/vertex_ultrascale.png)
+
+---
+
+![](../media/unit_shipments_2021.png)
+
+<sub><sub>https://www.statista.com/statistics/802632/world-semiconductor-shipments/</sub></sub>
+
+---
+
+# Why would anyone buy a 1 M NOK FPGA?
+
+---
+
+# Purpose
+
+nRF51, nRF52, nRF53 series devices from Nordic Semiconductor are all the same type of tool.
+
+* Add connectivity (Bluetooth, Zigbee, custom radio protocol) to your product.
+* Provide a microcontroller (CPU + peripherals like interfaces (SPI,UART,ADC,COMP,I2C)) to process information, and interface with the world. 
+
+---
+
+![](../media/2021-06-13_why_integrated_circuits/qfn48.pdf)
+
+---
+
+> Nomenclature
+-- the devising or choosing of names for things, especially in a science or other discipline.
+
+---
+# Zen of IC design (stole from Zen of Python)
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+
+---
+
+
+Homework for Friday: watch https://youtu.be/23fTB3hG5cA
