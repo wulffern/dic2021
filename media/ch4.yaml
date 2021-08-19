@@ -1,0 +1,36 @@
+package: ""
+pins: 16
+pitch: 0.4
+title: BC
+width: 2.8
+height: 2.8
+scale: 150
+textscale: 5
+
+category:
+  - regex:  "VBAT|VBUS"
+    color: "red"
+    type: "power"
+  - regex:  "VSS"
+    color: "blue"
+    type: "power"
+  - regex: "LED"
+    color: "green"
+    type: "input"
+
+
+left:
+  anchor: top
+  pins:
+    - VBUS
+    - ""
+    - ""
+    - LED
+
+right:
+  anchor: top
+  pins:
+    - VBAT
+    - ""
+    - ""
+    - VSS

@@ -95,7 +95,8 @@ I explain how diodes work.
 % -----------------------------------------------------------------
 \section{Why}
 % -----------------------------------------------------------------
-Diodes are a magical semiconductor device that mostly conducts current in one
+Diodes are a magical \footnote{It doesn't stop being magic just because you know
+  how it works -- Terry Pratchett, The Wee Free Men} semiconductor device that mostly conducts current in one
 direction. This is a useful feature, and it is one way to convert from an AC
 voltage to a DC voltage using a
 \url{https://en.wikipedia.org/wiki/Diode_bridge}.
@@ -131,8 +132,20 @@ Silicon is a crystal where all electrons are used in covalent bonds between the
 silicon atoms. If we ignore temperature, then none of the electronics are
 free to move. The temperature, the vibrations of the atoms, do sometimes
 break the covalent bond, so there is a continuous generation of electron/hole
-pairs in pure silicon. At room temperature this intrinsic carrier consentration is about
-$ n_{i} =  1.1 \times 10^{16} carriers/m^3$.
+pairs in pure silicon.
+
+To figure out the intrinsic carrier concentration we need
+to delve deep into the solid state physics (see intrinsic.py). The intrinsic
+carrier concentration is a function of the Fermi energy, the bandgap, the mass
+of carriers, a bunch of constants, and temperature.
+
+At room temperature this intrinsic carrier consentration is about
+$ n_{i} =  1 \times 10^{16} carriers/m^3$.
+
+That may sound like a big number, however, if we calculate the electrons per
+$um^{3}$ it's
+$n_{i} = \frac{1 \times 10^{16}}{(1 \times 10^{6})^{3}} carriers/\mu m^{3}< 1  $,
+so there are really not that many free carriers in intrinsic silicon.
 
 We can change the property of silicon by introducing other elements. Phosphor
 has one more electron/proton than silicon, Boron has one less electron/proton.
@@ -154,8 +167,7 @@ In a p-type material, although holes dominate, there will still be a minority of
 electrons moving around, which is given by
 \eqn{p_{n} = \frac{n_{i}^{2}}{N_{D}}}
 , and a similar equation for the hole concentration in an n-type.
-If you need to know why it's this equation, then you need to check a solid-state
-physics book. This is one of those equations that you just need to remember
+
 
 In a p-type crystal there is a majority of holes, and a minority of electrons.
 Thus we name holes majority carriers, and electrons minority carriers. For

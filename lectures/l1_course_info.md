@@ -12,7 +12,7 @@ header:  Helvetica
 # Goal for today
 * Who are we
 * Introduce Course
-* Introduce Exercisess
+* Introduce Exercises
 * Introduce Project
 * Introduce Software
 * What will we focus on in this course
@@ -31,8 +31,8 @@ header:  Helvetica
 
 # Teaching assistants
 
-- Eshan Lari
-- Erlend Kristian Berg
+- Ehsan Lari
+- Erlend Kristiansen Berg
 - Jonas Gjendem Røysland 
 
 ---
@@ -81,8 +81,12 @@ header:  Helvetica
 
 # Exam
 
-
-TBD
+- December 2021?
+- 4 hours
+- D aids code - No handwritten or printed aids allowed. Preapproved calculator, in accordance to the exam regulations,
+  allowed
+- 70% of the final grade
+- A - F grade (F = Fail)
 
 ---
 
@@ -116,6 +120,13 @@ TBD
 
 ---
 
+- 30 % of final grade
+- Groups of 2 people. Find a partner soon. Sign up on blackboard.
+- Deadline: 19'th November before 12:00 (24 hour format). 
+- Strict deadline, $$t > 12:00 \equiv fail$$. Both members in group must submit report.
+
+---
+
 # [A 10 000 Frames/s CMOS Digital Pixel Sensor](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=972156)
 
 ![inline](../media/isscc.png)
@@ -124,24 +135,21 @@ TBD
 # Goal
 Be inspired by the paper, and design a similar system. 
 
-Design analog circuits in SPICE and digital circuits in verilog.
+Design analog circuits in SPICE and digital circuits in SystemVerilog.
 
 ---
 
 # Minimum implementation 
-- 2 x 2 pixel array in verilog
-- 8-bit gray counter in verilog
-- state machine to control reset, exposure, analog-to-digital conversion, and
-  readout of the pixel array
-- SPICE of pixel sensor
-- SPICE of pixel comparator
-- SPICE of memory cell
+- 2 x 2 pixel array in SystemVerilog
+- state machine to control reset, exposure, analog-to-digital conversion, and readout of the pixel array
+- SPICE of pixel sensor (sensor, comparator, memory)
 - Report documenting that the circuits (analog and digital) work as designed
 
 ---
 # Things it's OK to ignore
 
 - Transistor corners
+- Gray counter (ask me why)
 - Voltage variation
 - Temperature variation
 - "nice to have features", like power optimalization, testability
@@ -153,15 +161,17 @@ Design analog circuits in SPICE and digital circuits in verilog.
 [github.com/wulffern/dicex](https://github.com/wulffern/dicex)
 
 ```
-├── spice                   
-│   ├── Makefile
-│   └── pixelSensor.cir
-└── verilog
-    ├── Makefile
-    ├── pixelSensor.fl
-    ├── pixelSensor.v
-    ├── pixelSensor_tb.gktw
-    └── pixelSensor_tb.v
+project/
+├── spice/
+│   ├── Makefile                # See https://www.gnu.org/software/make/manual/html_node/Introduction.html
+│   ├── pixelSensor.cir         # Empty circuit for pixelSensor
+│   └── pixelSensor_tb.cir      # SPICE testbench for pixelSensor, emulates verilog
+└── verilog/
+    ├── Makefile                
+    ├── pixelSensor.fl          # Verilog file list
+    ├── pixelSensor_tb.gtkw     # Save file for GTKWave
+    ├── pixelSensor_tb.v        # Verilog testbench for pixelSensor
+    └── pixelSensor.v           # Verilog model of analog pixelSensor circuit
 ```
 
 ---
@@ -186,9 +196,9 @@ Design analog circuits in SPICE and digital circuits in verilog.
   - Describe key results
 - **Discussion and conclusion** = Why do you deserve a good grade?
 - **Appendix**
-  - Spice netlist
-  - Verilog netlist
-  - Verilog testbench
+  - SPICE netlist
+  - SystemVerilog netlist
+  - SystemVerilog testbench
 
 ---
 
@@ -196,41 +206,70 @@ Design analog circuits in SPICE and digital circuits in verilog.
 
 ---
 
-
 #[fit] Software
 
 ---
-You may use what ever you want, but exercises and project have been developed
-using AIM-Spice, iverilog, and GKTwave on Ubuntu linux
+You may use what ever you want, but exercises and project have been developed using AIM-Spice, ngspice, iverilog, and GKTwave on Ubuntu linux
 
-- AIM-Spice [aimspice.com](http://aimspice.com)
+**SPICE**
+- AIM-Spice [aimspice.com](http://aimspice.com) (Used for exercises)
+- NGSpice [ngspice](http://ngspice.sourceforge.net) , version 34 (Recommended for project)
+
+**SystemVerilog**
 - iverilog [Icarus Verilog](http://iverilog.icarus.com), minimum v11_0
 - gtkwave  [GTKWave](http://gtkwave.sourceforge.net), version 3.3.104
 
 ---
-# Option 1 
-
-Install everything yourself on your computer
+# Option 1 : Install everything on your computer
 
 The software can be installed on Windows, Mac, and Linux
 
----
-# Option 2
+| Pros                              | Cons                 |
+| :---                              | ---:                 |
+| Once it's running, then it's easy | Take time to install |
+|                                   | Compile from source  |
+|                                   | No support from us on installing   |
 
-Use login.stud.ntnu.no, run this command
+
+---
+# Option 2 : Use login.stud.ntnu.no
+
+| Pros                                     | Cons                              |
+| :--                                      | ---:                              |
+| I've tested with login.ansatt.ntnu.no    | GUI windows require a bit of work |
+| TAs have tested with login.stud.ntnu.no  | Online                            |
+| Similar to real world (desktop + server) |                                   |
+
+
+---
+# Option 2: Quickstart for login.stud.ntnu.no
+
+ssh to login.stud.ntnu.no, run 
 
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/wulffern/dicex/main/ubuntu_install.sh)"
-
 ```
----
-# Option 3
 
+Connect to login from a mac/linux so you get GUI also
+
+```sh
+ssh -c aes128-ctr -YC -o "ForwardX11Timeout 4W" <username>@login.stud.ntnu.no
+```
+
+---
+# Option 3: Ubuntu on docker image with VNC frontend
+
+Run Ubuntu linux on your PC via docker and use a VNC client to connect
+
+| Pros                               | Cons                               |
+| :--                                | ---:                               |
+| If it works, it's easy             | Complex, so maybe there are issues |
+| I've tested it                     | Large ( > 3 GB)                      |
+| Offline (not for first run though) |                                    |
+
+
+---
 # dicex and ciceda
-
-
----
-
 Design of Integrated Circuits exercises (dicex) are the testbenches and model files you'll need 
 [https://github.com/wulffern/dicex](https://github.com/wulffern/dicex)
 
@@ -264,6 +303,21 @@ See [demo video](https://youtu.be/SpHw1MB3fus)
 ---
 
 # Expect that you will spend at least $$2\pi$$ times more time than planned *(mostly due to EDA issues)* 
+
+---
+
+# Goal for today
+* Try to convince you why you should learn about ICs
+* Introduce how we're going to learn it
+* Why do we make ICs?
+* Introduce what skills you'll learn  
+
+---
+
+# Memo time
+[https://github.com/wulffern/dic2021/tree/main/2021-06-13\_why\_integrated_circuits](https://github.com/wulffern/dic2021/blob/main/2021-06-13_why_integrated_circuits/why_learn_dic.pdf)
+
+---
 
 ---
 
@@ -335,4 +389,7 @@ If the implementation is easy to explain, it may be a good idea.
 ---
 
 
-Homework for Friday: watch https://youtu.be/23fTB3hG5cA
+
+
+Homework for friday: watch https://youtu.be/23fTB3hG5cA
+
