@@ -167,6 +167,24 @@ Seems like the highest known band gap is about 13.5 eV (Lithium Fluoride)
 ---
 
 # Process steps 
+- https://en.wikipedia.org/wiki/Semiconductor_device_fabrication
+- https://en.wikipedia.org/wiki/Chemical_vapor_deposition
+- https://en.wikipedia.org/wiki/Sputtering
+- https://en.wikipedia.org/wiki/Chemical-mechanical_polishing
+- https://en.wikipedia.org/wiki/Etching_(microfabrication)
+- https://en.wikipedia.org/wiki/RCA_clean
+- https://en.wikipedia.org/wiki/Reactive-ion_etching
+- https://en.wikipedia.org/wiki/Deep_reactive-ion_etching
+- https://en.wikipedia.org/wiki/Czochralski_method
+- https://en.wikipedia.org/wiki/Ion_implantation
+  - axcelis (Purion)
+- https://en.wikipedia.org/wiki/Diffusion
+- https://en.wikipedia.org/wiki/Photoresist
+  - Dow Chemical 
+  - JSR
+  - Shin-Etsu 
+- https://en.wikipedia.org/wiki/Photolithography
+  - ASML
 
 ---
 
