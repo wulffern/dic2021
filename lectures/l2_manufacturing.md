@@ -8,12 +8,18 @@ header:  Helvetica
 ## TFE4152 - Lecture 2
 # How are ICs made
 
+## [Source](https://github.com/wulffern/dic2021/blob/main/lectures/l2_manufacturing.md)
+
 ---
 
 # Goal for today
 
-* Why make ICs
-* How are they made
+* Why
+* How
+  - PCB
+  - Package
+  - Die
+  - Lithography
 
 ---
 
@@ -21,16 +27,18 @@ header:  Helvetica
 
 ---
 
-#All ICs are made for a purpose
+# All ICs are made for a purpose
 
 ---
 
 ![left 100%](../media/lindens_handbook_of_batteries.png)
 
-![right 60%](../media/charge_graph.png)
+# Let's make a battery charger
 
 ---
 # How
+
+[.column]
 
 - What does the use case require?
 - What IC do we need?
@@ -38,24 +46,35 @@ header:  Helvetica
 - What pins do we need?
 - What states are there?
 
+[.column]
+![right 60%](../media/charge_graph.png)
+
 ---
 
 ![fit](../media/ch4.pdf)
 
 ---
 
-# Printed Circuit Board
+#[fit] How
+
+---
+
+#[fit] Printed Circuit Board (PCB)
 
 ---
 
 [.column]
 
 ![inline](../media/l2_sch.png)
-![inline](../media/l2_pcb.png)
+
 
 [.column]
 
+![inline](../media/l2_pcb.png)
+
 ---
+
+# PCB
 
 - Many, many vendors 
 - I know Ph.D that students have used [PCBway](https://www.pcbway.com/)
@@ -65,8 +84,6 @@ header:  Helvetica
 ---
 
 # Package and Test
-
----
 
 ![left 100%](../media/MQFP.png)
 
@@ -88,17 +105,18 @@ Usually done by OSATS (Outsourced Semiconductor Assembly and Test)
 
 ![left fit](https://s.zeptobars.com/nRF51822.jpg) 
 
-# Die
+#[fit] Die
+
+<sub><sub>Picture: nRF51822 (https://s.zeptobars.com/nRF51822.jpg)</sub></sub> 
 
 ---
 
+# Who makes dies?
+
 - TSMC, Globalfoundries, Samsung, UMC, SMIC ...
 - Very, very, very, very expensive to make
-- But, [Sam Zelof](https://www.youtube.com/watch?v=IS5ycm7VfXg&t=3), made one i
-  his garage
+- But, Sam Zeloof, made one i his garage [https://www.youtube.com/watch?v=IS5ycm7VfXg&t=3](https://www.youtube.com/watch?v=IS5ycm7VfXg&t=3)
 
-
-<sub><sub>Picture: nRF51822 (https://s.zeptobars.com/nRF51822.jpg)</sub></sub> 
 
 ---
 
@@ -166,14 +184,6 @@ Seems like the highest known band gap is about 13.5 eV (Lithium Fluoride)
 
 ---
 
-# Process steps 
-
----
-
-![fit](https://s.zeptobars.com/nRF51822.jpg) 
-
----
-
 # How does foundry know what to make?
 
 ---
@@ -185,90 +195,5 @@ Seems like the highest known band gap is about 13.5 eV (Lithium Fluoride)
 
 ---
 
-# Path to GDSII
+# How do we get to a GDSII file?
 
----
-
-[.column]
-#[fit] Analog on top
-
-
-[.column]
-
-#[fit] Digital on top
-
----
-
-[.column]
-#[fit] Analog top layout
-
-
-[.column]
-
-#[fit] Place and route
-
----
-[.column]
-#[fit] Analog extracted simulation
-
-- Did parasitics (RLC) screw something up
-- Does it still work?
-
-[.column]
-
-#[fit] Netlist simulation
-
-- Timing
-- Setup/Hold times
-- Functionality
-
----
-
-[.column]
-#[fit] Analog Cell Layout
-
-- Polygon pushing
-- Power routing
-- Expensive tools: Cadence Virtuoso
-- Need Process Design Kit (PDK) from foundry
-- Free tools ([magic](http://opencircuitdesign.com/magic/)) exists, but what about PDK??
-
-[.column]
-
-#[fit] Synthesis
-
-- Translate Verilog or SystemVerilog (or VHDL) to netlist
-- Expensive tools
-- But [yosys](http://www.clifford.at/yosys/) is pretty good (and free)
-
----
-
-[.column]
-#[fit] Analog cell layout
-
-- Transistors
-- Resistors
-- Capacitors
-- (Inductors)
-- (Diodes)
-- (Silicon Rectifiers)
-
-[.column]
-
-#[fit] Digital standard cell design layout
-
-- standard cells (INV, AND, OR, NOR, NAND, XOR, DFF)
-
----
-
-[.column]
-#[fit] Analog Schematic simulation
-
-- Does it work over process, voltage and corners?
-
-
-[.column]
-
-#[fit] Place and route
-
----

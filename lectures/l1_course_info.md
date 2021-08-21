@@ -14,15 +14,14 @@ header:  Helvetica
 ---
 
 # Goal for today
-* Who are we
-* Introduce Course
-* Introduce Exercises
-* Introduce Project
-* Introduce Software
-* Why do we make ICs?
-* Introduce what skills you'll learn 
-* Introduce how we're going to learn it
-
+* Who
+* Course
+* Exercises
+* Project
+* Software
+* Why
+* Skills
+* How
 
 ---
 
@@ -333,7 +332,7 @@ Custom IC Creator Electronic Design Automation (ciceda) is a docker image of a u
 # dicex - Requirements
 - Install [Docker](http://www.docker.com)
 - Install [GIT](https://git-scm.com/downloads)
-- Install [TigerVNC](https://github.com/TigerVNC/tigervnc/releases)
+- Install [TigerVNC](https://github.com/TigerVNC/tigervnc/releases) (not needed on Mac)
 
 ---
 
@@ -367,7 +366,7 @@ See [demo video](https://youtu.be/SpHw1MB3fus)
 
 ---
 
-#[fit] Why do we make ICs?
+#[fit] Purpose
 
 ---
 
@@ -403,7 +402,10 @@ See [demo video](https://youtu.be/SpHw1MB3fus)
 
 ---
 
-#[fit] Purpose
+![inline](https://cerebras.net/wp-content/uploads/2021/08/Chip-comparison-01.jpg)
+
+<sub><sub>https://cerebras.net/chip/</sub></sub>
+
 
 ---
 
@@ -412,6 +414,7 @@ nRF51, nRF52, nRF53 series devices from Nordic Semiconductor are all the same ty
 * Add connectivity (Bluetooth, Zigbee, custom radio protocol) to your product.
 * Provide a microcontroller; CPU + peripherals like interfaces (SPI, UART, ADC, COMP, I2C) to process information, and interface with the world. 
 
+<!--
 ---
 
 ![inline](../2021-06-13_why_integrated_circuits/qfn48.pdf)
@@ -420,34 +423,46 @@ nRF51, nRF52, nRF53 series devices from Nordic Semiconductor are all the same ty
 
 ![inline](../media/nrf5340.png)
 
+-->
+
 ---
+
 
 #[fit] Skills
 
 ---
 
-- Firmware: signal processing, algorithms
-- Infrastructure: Power management, reset, bias, clocks
-- Domains: CPUs, peripherals, memories, bus systems
-- Sub-systems: Radio’s, analog-to-digital converters, comparators
-- Blocks: Analog Radio, Digital radio baseband
-- Modules: Transmitter, receiver, de-modulator, timing
+- _Project flow support_: Confluence, JIRA, risk management (DFMEA), failure analysis (8D)
+- _Language_: English, Writing English (Latex, Word, Email)
+- _Psychology_: Personalities, convincing people, presentations (Powerpoint, Deckset), stress management (what makes your brain turn off?)
+- _DevOps_: Linux, bulid systems (CMake, make, ninja), continuous integration
+  (bamboo, jenkins), version control (git), containers (docker), container orchestration (swarm, kubernetes)
+- _Programming_: Python, Go, C, C++, Matlab <sub>Since 1999 I’ve programmed in Python, Go, Visual BASIC, PHP, Ruby, Perl, C#, SKILL, Ocean, Verilog-A, C++, BASH, AWK, VHDL, SPICE, MATLAB, ASP, Java, C, SystemC, Verilog, and probably a few I’ve forgotten.</sub>
+- _Firmware_: signal processing, algorithms
+- _Infrastructure_: Power management, reset, bias, clocks
+- _Domains_: CPUs, peripherals, memories, bus systems
+- _Sub-systems_: Radio’s, analog-to-digital converters, comparators
+- _Blocks_: Analog Radio, Digital radio baseband
+- _Modules_: Transmitter, receiver, de-modulator, timing
 recovery, **state machines**
-- Designs: Opamps, **amplifiers**,  **current-mirrors**, **adders**,
+- _Designs_: Opamps, **amplifiers**,  **current-mirrors**, **adders**,
 random access memory blocks, **standard cells**
-- Tools: schematic, layout, synthesis, place-and-route, **verilog**, **netlist** 
-- Physics: **transistor**, **pn junctions**, quantum mechanics
+- _Tools_: schematic, layout, parasitic extraction, synthesis, place-and-route, **simulation**,  **(System)Verilog**, **netlist** 
+- _Physics_: **transistor**, **pn junctions**, quantum mechanics
+
+---
+[.background-color: #000000]
+[.text: #FFFFFF]
+
+> Find a problem that you really want to solve, and learn a programming language to solve it. There is absolutely no point in saying "I want to learn programming", then sitting down with a book to read about programming, and expect that you will learn programming that way. It will not happen. The only way to learn programming is to program, a lot. 
+-- Carsten Wulff
 
 ---
 
-#[fit] How will we learn it?
+#[fit] How 
 
 ---
-
-#[fit] We need to build a solid foundation, so it's bottom up
-
----
-
+<!--
 > Nomenclature
 -- the devising or choosing of names for things, especially in a science or other discipline.
 
@@ -472,8 +487,26 @@ random access memory blocks, **standard cells**
 
 ---
 
-# Homework for Friday 
+-->
 
-# [Sam Zeloof Home Chip Fab](https://youtu.be/23fTB3hG5cA)
+# If you have questions on the course content
+**Do:**
+- Google
+- Ask a someone in your class
+- Use the "øvingstime and labratorieøvelse" for teaching assistants
+- If none of the above works, we'll use first few minutes in lectures for questions on the previous questions.
+
+**Don't:**
+- Send email. Long response time.
+- Use Teams. It interrupts the person your contacting.
+- Come to the office. I'm only at NTNU 20%
 
 ---
+
+# Lecture 2: Manufacturing of integrated circuits
+
+## Homework => [Sam Zeloof Home Chip Fab](https://youtu.be/23fTB3hG5cA)
+
+---
+
+#[fit] Thanks!

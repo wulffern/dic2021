@@ -78,6 +78,7 @@ def calc_ni(T):
 if __name__ == "__main__":
 
     K0 = -273.15
+    Tc = np.arange(-40, 150)# Celcius
     T = Tc - K0
     ic = np.isclose(T,300,rtol=1e-3,atol=1e-3)
     i = np.where(ic)[0]
