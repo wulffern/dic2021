@@ -6,7 +6,7 @@ text:  Helvetica
 header:  Helvetica
 
 ## TFE4152 - Lecture 2
-# How are ICs made
+# Manufacture Integrated Circuits
 
 ## [Source](https://github.com/wulffern/dic2021/blob/main/lectures/l2_manufacturing.md)
 
@@ -16,18 +16,25 @@ header:  Helvetica
 
 * Why
 * How
-  - PCB
-  - Package
-  - Die
-  - Lithography
+
+<!-- 
+  - Wafer
+  - Photolithography
+  - Remove stuff
+  - Add stuff
+  - Cleaning
+-->
+
+* What
+
+<!--
+  - Digital flow 
+  - Analog flow
+-->
 
 ---
 
 #[fit] Why
-
----
-
-# All ICs are made for a purpose
 
 ---
 
@@ -47,11 +54,7 @@ header:  Helvetica
 - What states are there?
 
 [.column]
-![right 60%](../media/charge_graph.png)
-
----
-
-![fit](../media/ch4.pdf)
+![inline](../media/charge_graph.png)
 
 ---
 
@@ -59,7 +62,7 @@ header:  Helvetica
 
 ---
 
-#[fit] Printed Circuit Board (PCB)
+# Printed Circuit Board (PCB)
 
 ---
 
@@ -74,8 +77,6 @@ header:  Helvetica
 
 ---
 
-# PCB
-
 - Many, many vendors 
 - I know Ph.D that students have used [PCBway](https://www.pcbway.com/)
 - Omega Verksted probably know best option
@@ -84,6 +85,8 @@ header:  Helvetica
 ---
 
 # Package and Test
+
+---
 
 ![left 100%](../media/MQFP.png)
 
@@ -103,9 +106,11 @@ Usually done by OSATS (Outsourced Semiconductor Assembly and Test)
 
 ---
 
-![left fit](https://s.zeptobars.com/nRF51822.jpg) 
+# Die
 
-#[fit] Die
+---
+
+![original 160%](https://s.zeptobars.com/nRF51822.jpg) 
 
 <sub><sub>Picture: nRF51822 (https://s.zeptobars.com/nRF51822.jpg)</sub></sub> 
 
@@ -114,20 +119,45 @@ Usually done by OSATS (Outsourced Semiconductor Assembly and Test)
 # Who makes dies?
 
 - TSMC, Globalfoundries, Samsung, UMC, SMIC ...
-- Very, very, very, very expensive to make
-- But, Sam Zeloof, made one i his garage [https://www.youtube.com/watch?v=IS5ycm7VfXg&t=3](https://www.youtube.com/watch?v=IS5ycm7VfXg&t=3)
+- Extremely high initial cost (k\$ to M\$)
+- Low production cost (<< \$ per mm<sup>2</sup>)
+- Sam Zeloof, made one i his garage [https://www.youtube.com/watch?v=IS5ycm7VfXg&t=3](https://www.youtube.com/watch?v=IS5ycm7VfXg&t=3)
 
 
 ---
 
-# Let me tell you a secret
+# Wafer
 
 ---
 
-# Why does a fab cost billions?
+### Ingot created with Czochralski Process
+![inline](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Czochralski_Process.svg/2560px-Czochralski_Process.svg.png)
 
 ---
-# Lithography
+[.background-color: #000000]
+
+
+# [Quantum Bound States](https://phet.colorado.edu/sims/cheerpj/bound-states/latest/bound-states.html?simulation=bound-states)
+
+---
+
+[.column]
+
+> Everything should be made as simple as possible, but no simpler. (A. Einstein)
+
+![original](../media/crystal_simplified.png)
+
+[.column]
+
+[Crystal lattice](https://sketchfab.com/3d-models/silicon-crystal-lattice-73e292f32ffe4ca490e166faeba317e7)
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Silicon-unit-cell-3D-balls.png/628px-Silicon-unit-cell-3D-balls.png)
+
+---
+
+# Photolithography
+
+---
 
 ArFr light source: 193 nm
 
@@ -184,16 +214,62 @@ Seems like the highest known band gap is about 13.5 eV (Lithium Fluoride)
 
 ---
 
-# How does foundry know what to make?
+# Remove stuff
+
+[Etching](https://en.wikipedia.org/wiki/Etching_\(microfabrication\))
+
+[Chemical Mechanical Polish](https://en.wikipedia.org/wiki/Chemical-mechanical_polishing)
+
+[RCA clean](https://en.wikipedia.org/wiki/RCA_clean)
 
 ---
 
-# GDSII DEMO
+# Add stuff
+
+[Thermal oxidation](https://en.wikipedia.org/wiki/Thermal_oxidation)
+
+[Chemical vapor deposition](https://en.wikipedia.org/wiki/Chemical_vapor_deposition)
+
+[Atomic layer deposition](https://en.wikipedia.org/wiki/Atomic_layer_deposition)
+
+[Ion implantation](https://en.wikipedia.org/wiki/Ion_implantation)
+
+[Diffusion](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1050758)
+
+---
+
+# Diffusion
+
+[.column]
+[Diffusion Selfaligned MOST; A New Approach to High Speed Devices, 1969](https://confit.atlas.jp/guide/event-img/ssdm1969/4-1/public/pdf_archive?type=in)
+
+![inline](../media/diffusion_most.png)
+
+[.column]
+[Complementary DMOS Process for LSI](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1050758)
+
+![inline](../media/diffusion_dmos.png)
+
+---
+
+![fit](https://s.zeptobars.com/nRF51822.jpg) 
+
+---
+
+#[fit] What
+
+---
+
+# GDSII (DEMO)
 
 ![](../media/klayout.png) 
 
+---
+
+# How do we go from idea to GDSII?
 
 ---
 
-# How do we get to a GDSII file?
+#[fit] Thanks!
+
 

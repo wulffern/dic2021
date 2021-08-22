@@ -70,11 +70,11 @@ header:  Helvetica
 
 | Week | Book                    | Monday                                                                    | Book                    | Friday                               |
 |------|-------------------------|---------------------------------------------------------------------------|-------------------------|--------------------------------------|
-| 34   |                         | Introduction, what are we going to do in this course. Why do you need it? | WH 1                    | Manufacturing of integrated circuits |
+| 34   |                         | Introduction, what are we going to do in this course. Why do you need it? | WH 1 , WH 15            | Manufacturing of integrated circuits |
 | 35   | CJM 1.1                 | pn Junctions                                                              | CJM 1.2 WH 1.3, 2.1-2.4 | Mosfet transistors                   |
 | 36   | CJM 1.2 WH 1.3, 2.1-2.4 | Mosfet transistors                                                        | CJM 1.3 - 1.6           | Modeling and passive devices         |
 | 37   |                         | Guest Lecture - Sony                                                      | CJM 3.1, 3.5, 3.6       | Current mirrors                      |
-| 38   | CJM 3.2, 3.3,3.4 3.7    | Amplifiers                                                                | CJM, CJM 2 WH 1.5 WH 15 | SPICE simulation  and layout         |
+| 38   | CJM 3.2, 3.3,3.4 3.7    | Amplifiers                                                                | CJM, CJM 2 WH 1.5       | SPICE simulation  and layout         |
 | 39   |                         | Verilog                                                                   |                         | Verilog                              |
 | 40   | WH 1.4 WH 2.5           | CMOS Logic                                                                | WH 3                    | Speed                                |
 | 41   | WH 4                    | Power                                                                     | WH 5                    | Wires                                |
@@ -104,7 +104,7 @@ header:  Helvetica
 
 # Facts
 - 4 exercises on blackboard (somewhat modified from last year), 1 more to come, exercise 6 is special
-- last years exercise and solutions on blackboard (soon)
+- last years exercise and solutions on blackboard
 - must have 4 of 6 exercises approved
 - strict deadline (Friday XX 23:59)
 - no second chances
@@ -115,12 +115,11 @@ header:  Helvetica
 
 ![inline](../media/maze.gif)
 
-
 ---
 
 # Exercise 6: Maze
 1. Explain how the mazeEscaper.v works
-2. Make a soluition that is better
+2. Make a solution that is better
 3. Upload PDF with explanation and verilog to Blackboard
 4. Send mazeEscaper.v as attachment to carstenw@ntnu.no with subject TFE4152-Comp-Maze
 
@@ -208,7 +207,7 @@ project/
   - As little information as possible. Give references to sources. Assume that
   the reader has read the paper. 
 - **Implementation** = What?
-  - Describe how you implemented your design
+  - Describe what you designed
   - State diagrams, with explanation
   - Circuit diagrams, with explanation
   - One sub-chapter per block
@@ -414,7 +413,7 @@ nRF51, nRF52, nRF53 series devices from Nordic Semiconductor are all the same ty
 * Add connectivity (Bluetooth, Zigbee, custom radio protocol) to your product.
 * Provide a microcontroller; CPU + peripherals like interfaces (SPI, UART, ADC, COMP, I2C) to process information, and interface with the world. 
 
-<!--
+
 ---
 
 ![inline](../2021-06-13_why_integrated_circuits/qfn48.pdf)
@@ -423,10 +422,8 @@ nRF51, nRF52, nRF53 series devices from Nordic Semiconductor are all the same ty
 
 ![inline](../media/nrf5340.png)
 
--->
 
 ---
-
 
 #[fit] Skills
 
@@ -489,17 +486,25 @@ random access memory blocks, **standard cells**
 
 -->
 
-# If you have questions on the course content
-**Do:**
-- Google
-- Ask a someone in your class
-- Use the "øvingstime and labratorieøvelse" for teaching assistants
-- If none of the above works, we'll use first few minutes in lectures for questions on the previous questions.
+# If you have questions on the course content (exercise, project, lectures)
 
-**Don't:**
-- Send email. Long response time.
-- Use Teams. It interrupts the person your contacting.
-- Come to the office. I'm only at NTNU 20%
+---
+
+## Do
+- google
+- ask a someone in your class
+- use the "øvingstime and labratorieøvelse" to talk to teaching assistants. Don't ask about long future (future exercises).
+
+If none of the above works, we'll use first few minutes in each lectures for questions on the previous content (but not future content).
+
+---
+
+## Don't
+- send email with questions on excercise, project, lectures etc. Long response time. 
+- use Teams. It interrupts the person your contacting. 
+- come to the office. I'm only at NTNU 20%. 
+
+There are approx 130 students. Email, teams, f2f does not scale.
 
 ---
 
