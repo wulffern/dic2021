@@ -13,6 +13,7 @@ header:  Helvetica
 ---
 - Learn to learn
 - How did I choose analog
+- Exam: December 10'th
 ---
 
 # Goal for today
