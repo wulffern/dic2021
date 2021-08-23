@@ -11,6 +11,9 @@ header:  Helvetica
 ## [Source](https://github.com/wulffern/dic2021/blob/main/lectures/l2_manufacturing.md)
 
 ---
+- Learn to learn
+- How did I choose analog
+---
 
 # Goal for today
 
