@@ -87,7 +87,7 @@ if __name__ == "__main__":
 
     plt.semilogy(Tc,ni,label="Electrons")
     plt.grid()
-    plt.ylabel("Intrinsic carrier concentration [1/cm^3]")
+    plt.ylabel("Intrinsic carrier concentration [1/m^3]")
     plt.xlabel("Temperature [Celcius]")
     #plt.plot(T,p,label="Holes")
     plt.show()
