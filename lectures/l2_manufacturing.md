@@ -214,15 +214,6 @@ Seems like the highest known band gap is about 13.5 eV (Lithium Fluoride)
 
 ---
 
-# Remove stuff
-
-[Etching](https://en.wikipedia.org/wiki/Etching_\(microfabrication\))
-
-[Chemical Mechanical Polish](https://en.wikipedia.org/wiki/Chemical-mechanical_polishing)
-
-[RCA clean](https://en.wikipedia.org/wiki/RCA_clean)
-
----
 
 # Add stuff
 
@@ -235,6 +226,18 @@ Seems like the highest known band gap is about 13.5 eV (Lithium Fluoride)
 [Ion implantation](https://en.wikipedia.org/wiki/Ion_implantation)
 
 [Diffusion](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1050758)
+
+[Electroplating](https://en.wikipedia.org/wiki/Electroplating)
+
+---
+
+# Remove stuff
+
+[Etching](https://en.wikipedia.org/wiki/Etching_\(microfabrication\))
+
+[Chemical Mechanical Polish](https://en.wikipedia.org/wiki/Chemical-mechanical_polishing)
+
+[RCA clean](https://en.wikipedia.org/wiki/RCA_clean)
 
 ---
 
@@ -472,7 +475,16 @@ endmodule // counter
 ![right fit](../media/dsim.png) 
 
 ---
+# Want to learn more?
 
+Preview of Advanced Integrated Circuits
+
+[AIC - Layout](https://youtube.com/playlist?list=PLybHXZ9FyEhYDBSJaHqvx0rVH6mHBgl_2)
+[AIC - Schematic](https://youtube.com/playlist?list=PLybHXZ9FyEhaVbo8Su9XgAOkCsJYSP5mv)
+[AIC - General](https://youtube.com/playlist?list=PLybHXZ9FyEhYUZvAkZ2oeMkkP7YkEYDPo)
+[AIC - cheatsheet](https://github.com/wulffern/ciccheatgen/blob/main/pdf/aic.pdf)
+
+---
 
 #[fit] Thanks!
 

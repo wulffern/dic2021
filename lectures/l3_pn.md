@@ -129,7 +129,7 @@ $$
 
 [.column]
 
-$$n_n \approx = N_D$$
+$$n_n \approx  N_D$$
 
 $$ p_n = \frac{n_i^2}{N_D}$$
 
@@ -144,7 +144,7 @@ $$ p_n = \frac{n_i^2}{N_D}$$
 
 [.column]
 
-$$p_p \approx = N_A$$
+$$p_p \approx  N_A$$
 
 $$ p_n = \frac{n_i^2}{N_A}$$
 
@@ -198,7 +198,7 @@ For $$ x_p $$ replace $$N_A = N_D, N_D = N_A $$
 CJM, single sided diode:
 
 $$
-C_j = C_{j0} \left[ 1  + \frac{V_R}{\Phi_0}\right]^{1/2}
+C_j = C_{j0} \left[ 1  + \frac{V_R}{\Phi_0}\right]^{-1/2}
 $$
 
 BSIM 4.8:
@@ -219,7 +219,7 @@ $$
 
 ### Small-Signal model under forward bias
 
-Large signal current $$ I_D = I_s e^{V_D/V_T} $$
+Large signal current $$ I_D = I_s (e^{V_D/V_T} -1) $$
 
 Small signal conductance $$ g_d = \frac{dI_D}{dV_D} = \frac{I_D}{V_T} = \frac{1}{r_d} $$
 
@@ -243,9 +243,8 @@ where $$ \tau_T $$ is the transit time of the diode
 
 ---
 
-## Thanks!
+#[fit] Thanks!
 
----
 
 
 
