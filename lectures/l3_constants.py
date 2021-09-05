@@ -12,4 +12,4 @@ mu = 2* alpha*h/(c*np.power(q,2))
 print("Permiability of free space = %g" % mu)
 
 epsilon = 1/(mu* c**2)
-print("Permitivity of free space = %g" % epsilon)
+print("Permittivity of free space = %g" % epsilon)

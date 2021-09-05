@@ -30,6 +30,11 @@ header:  Helvetica
 
 [MIT 8.05 Quantum Mechanics II](https://ocw.mit.edu/courses/physics/8-04-quantum-physics-i-spring-2013/lecture-videos/)
 
+
+[ieeexplore.ieee.org](http://ieeexplore.ieee.org)
+
+[Introduction to ieeexplore](https://youtu.be/wZZnlhiIQJE)
+
 ---
 $$ 
 q = 1.6 \times 10^{-19} [C] 
@@ -77,9 +82,9 @@ Permitivity of free space = 8.85419e-12
 
 # Computer models
 
-http://bsim.berkeley.edu/models/bsim4/
+[http://bsim.berkeley.edu/models/bsim4/](http://bsim.berkeley.edu/models/bsim4/)
 
-http://bsim.berkeley.edu/BSIM4/BSIM480.zip
+[http://bsim.berkeley.edu/BSIM4/BSIM480.zip](http://bsim.berkeley.edu/BSIM4/BSIM480.zip)
 
 
 ---
@@ -95,7 +100,7 @@ $$ N_V = 2\left(\frac{2 \pi m_{p}^* k T}{h^2}\right)^{3/2} $$
 
 
 
-https://github.com/wulffern/dic2021/blob/main/2021-07-08_diodes/intrinsic.py
+[https://github.com/wulffern/dic2021/blob/main/2021-07-08_diodes/intrinsic.py](https://github.com/wulffern/dic2021/blob/main/2021-07-08_diodes/intrinsic.py)
 
 ![right fit](../media/intrinsic.png)
 
@@ -167,7 +172,10 @@ $$ p_n = \frac{n_i^2}{N_A}$$
 
 # Built in voltage
 
-Comes from [Fermi-Dirac statistics](https://en.wikipedia.org/wiki/Fermi–Dirac_statistics)
+$$ \frac{n_n}{n_p} = e^{\frac{q \Phi_0}{kT}} $$
+
+where $$ q \Phi_0 $$ is the energy required to climb the potential barrier, $$
+kT $$ is the thermal energy, and $$n_n$$ and $$n_p$$ are the electron concentrations in the n-type and p-type.
 
 [.column]
 
@@ -176,7 +184,7 @@ $$\Phi_0 = V_T ln\left(\frac{N_A N_D}{n_i^2}\right)$$
 $$ V_T = \frac{kT}{q}$$
 
 
-$$ \frac{n_n}{n_p} = e^{\frac{q \Phi_0}{kT}} $$
+
 
 ---
 
@@ -185,7 +193,7 @@ $$ \frac{n_n}{n_p} = e^{\frac{q \Phi_0}{kT}} $$
 # Depletion widths
 
 $$
- x_n = \left(\frac{2 K_s \epsilon_0 (\Phi_0 + V_R ) }{q} \frac{N_A}{N_D ( N_A + N_D )}\right)^{l_1}
+ x_n = \left(\frac{2 K_s \epsilon_0\Phi_0}{q} \left[1 + \frac{V_R}{\Phi_0}\right] \frac{N_A}{N_D ( N_A + N_D )}\right)^{l_1}
 $$
 
 where, $$ K_s = 11.8 $$ is the relative perimittivity of silicon, and $$ l_1 \approx 0.5 $$ to almost unity, depending on the doping profile
