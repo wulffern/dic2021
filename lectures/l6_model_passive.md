@@ -6,7 +6,7 @@ text:  Helvetica
 header:  Helvetica
 
 ## TFE4152 - Lecture 6
-# MOSFET's cont, models and passives
+# Models and passives
 
 ## [Source](https://github.com/wulffern/dic2021/blob/main/lectures/l6_model_passive.md)
 
@@ -30,18 +30,79 @@ header:  Helvetica
 | 47   | CJM                     | Recap of CJM                                                              | WH                      | Recap of WH                          |
 
 ---
-# Goal for today
+# Maze status (Exercise 6)
 
-[.column]
-- Mosfet cont
+| User           |  Clock Cycles |
+|:----------------:|:------:|
+| martinmm         | 240    |
+| carstenw         | 3471   |
+
+---
+# Goal for today
+- Common questions
 - Metal
 - Resistors
 - Capacitors
 - Inductors
 - Diodes
-- Antenna effect
+- Electrostatic discharge
 
 ---
+# p-, p, p+, n-, n, n+
+
+**What does p-, p, p+ mean?**
+We usually dope with $$N_A \approx 10^{21}$$ to $$ N_A \approx 10^{25}$$ per $$m^3$$ 
+
+ $$ N_{A(p-)} < N_{A(p)} < N_{A(p+)} $$
+
+**Why use it?**
+Imagine a $$n+$$ region in a $$p-$$ material. We then know that $$N_A << N_D$$ and the depletion region is mostly on the $$p-$$ side.
+
+---
+## How does $$n_i$$ change with temperature?
+
+Roughly doubles every 11 degrees (simple model)
+
+ $$ n_i \approx  1.1e10 \times 2^{\frac{T - 300.15}{11}}$$ [$$1/cm^3$$]
+
+BSIM 4.8, Intrinsic carrier concentration (page 122)
+
+$$
+n_i = 1.45e10\frac{TNOM}{300.15}\sqrt{\frac{T}{300.15}}exp\left[21.5565981 - \frac{qE_g(TNOM)}{2 k_b T}\right]
+$$
+
+---
+
+```python
+from scipy import constants
+import numpy as np
+import matplotlib.pyplot as plt
+k_b = constants.Boltzmann
+q = constants.physical_constants["elementary charge"][0]
+
+E_g = 1.13
+TNOM = 300.15
+T = np.arange(TNOM,TNOM + 100)
+n_i_simple = 1.1e10 * 2**((T - TNOM)/11)
+n_i_bsim = 1.45e10*(TNOM/300.15) * np.sqrt(T/300.15) \
+ * np.exp(21.5565981 - (q*E_g)/(2*k_b*T))
+plt.semilogy(T,n_i_simple,label="Simple")
+plt.semilogy(T,n_i_bsim,label="BSIM 4.8")
+plt.legend()
+plt.xlabel("Temperature [K]")
+plt.ylabel(" $n_i$ [$1/cm^3$]")
+plt.savefig("l6_ni.pdf")
+plt.show()
+```
+
+![right fit](l6_ni.pdf)
+
+---
+
+#[fit] Passives
+
+---
+
 
 # Metal in ICs is not wire in schematic
 
@@ -126,8 +187,107 @@ Must be considered for power supply and ground routing (high currents)
 #[fit] Capacitors
 
 ---
+# What is S, M, L, XL on a chip?
 
-![inline fit](../media/l6/fig_capacitors_vertical.pdf)
+[nRF52832](https://www.nordicsemi.com/products/nrf52832) $$ 3200 \mu m \times 3000 \mu m = 9600 k \mu m^2$$ 
+
+S $$ < 5 \text{ } k\mu m^2$$
+M $$ < 50 \text{ } k\mu m^2$$
+L $$ < 200 \text{ } k\mu m^2$$
+XL $$ > 200 \text{ } k\mu m^2$$
+
+![right fit](https://www.nordicsemi.com/-/media/Images/Products/SoC/SoCs-dobble-top/nRF52-Series/nRF52832-CIAA.png?h=350&la=en&mw=350&w=350&hash=591CA8242C4B08A31616C6C6F25B63023ECA3B0D)
+
+
+---
+
+# Metal-Oxide-Metal finger capacitors
+
+Unit capacitance $$ \approx 1 fF/\mu m^2/layer $$
+
+ $$ 10 pF = 100 \mu m \times 100 \mu m = 10 k \mu m^2$$
+
+![right fit](../media/l6/fig_capacitors_vertical.pdf)
+
+---
+
+# MOS capacitors
+
+![right fit](../media/inversion.pdf)
+
+---
+
+[.column]
+
+dicex/sim/spice/NCHIO/vcap.cir
+
+```
+* gate cap
+
+.include ../../../models/ptm_130.spi
+
+vdrain D 0 dc 1
+vgaini G 0 dc 0.5
+vbulk B 0 dc 0
+vcur S 0 dc 0
+
+M1 D G S B nmos  w=1u  l=1u
+
+.op
+```
+
+Moscap $$ \approx 10 fF / \mu m^2 $$
+
+ $$ 10 pF = 31 \mu m \times 31 \mu m \approx 1 k \mu m^2$$
+
+[.column]
+
+dicex/sim/spice/NCHIO/vcap.vlog
+
+```
+Device m1:
+	Vgs     (gate-source voltage)        [V] : 0.5
+	Vgd     (gate-drain voltage)         [V] : -0.5
+	Vds     (drain-source voltage)       [V] : 1
+	Vbs     (bulk-source voltage)        [V] : 1.90808e-12
+	Vbd     (bulk-drain voltage)         [V] : -1
+	Id      (drain current)              [A] : 7.32634e-06
+	Is      (source current)             [A] : -7.32633e-06
+	Ibd     (bulk-drain current)         [A] : -1.01e-12
+	Ibs     (bulk-source current)        [A] : 9.581e-25
+	Vt      (threshold voltage)          [V] : 0.378198
+	Vgt     (gate overdrive voltage)     [V] : 0.121802
+	Vgsteff (effective vgt)              [V] : 0.12515
+	Gm      (transconductance)           [S] : 8.44164e-05
+	Gmb     (bulk bias transconductance) [S] : 2.00071e-05
+	Ueff    (mobility)             [cm^2/Vs] : 417.675
+	Gds     (channel conductance)        [S] : 1.95043e-07
+	Rds     (output resistance)        [Ohm] : 5.12708e+06
+	Vdsat   (drain saturation voltage)   [V] : 0.14171
+	IC      (inversion coefficient)       [] : 4.42478
+	Cgs     (gate-source capacitance)    [F] : 9.98457e-15
+	Csg     (source-gate capacitance)    [F] : 5.86932e-15
+	Cgd     (gate-drain capacitance)     [F] : 3.98239e-16
+	Cdg     (drain-gate capacitance)     [F] : 3.91086e-15
+	Cds     (drain-source capacitance)   [F] : 4.30968e-15
+	Cgg     (gate-gate capacitance)      [F] : 1.05198e-14
+	Cdd     (drain-drain capacitance)    [F] : 1.05198e-14
+	Css     (source-source capacitance)  [F] : 0
+	Cgb     (gate-bulk capacitance)      [F] : 1.05198e-14
+	Cbg     (bulk-gate capacitance)      [F] : 1.74123e-15
+	Cbs     (bulk-source capacitance)    [F] : 8e-16
+	Cbd     (bulk-drain capacitance)     [F] : 3.97768e-16
+```
+
+
+---
+
+#[fit] Varactors (voltage dependent capacitor)
+
+
+---
+
+![original fit](../media/l6/pn.pdf)
 
 ---
 
@@ -137,44 +297,12 @@ Usually two top metals, because they are thick (low ohmic)
 
 Use foundry model
 
-3D simulation often needed
+3D electro magnetic simulation often needed
 
 ![right 200%](https://s.zeptobars.com/nRF51822.jpg) 
 
 ---
 
-# Diodes
-
-Many, many ways
-
-Reverse bias diodes to ground are useful for signals with long routing to transistor gate. Protects gate from breakdown during chemical mechanical polish.
-
-![right fit](../media/l6/diodes.pdf)
-
----
-
-# Electrostatic Discharge 
-
-If you make an IC, you must consider Electrostatic Discharge (ESD) Protection circuits
-
-![right fit](https://media.wiley.com/product_data/coverImage300/18/04714987/0471498718.jpg)
-
-Standards for testing at [JEDEC](https://www.jedec.org/category/technology-focus-area/esd-electrostatic-discharge-0)
-
-## But I just want a digital input, what do I need?
-
----
-
-![original fit](../media/l6/esd.pdf)
-
----
-
-#[fit] Input buffer
-
-![right fit](../media/l6/fig_methodology.pdf)
-
-
----
 # Variation in passives
 
 Absolute value for resistors and capacitors $$\approx \pm 10$$% to $$\pm 20$$%
@@ -220,14 +348,40 @@ Resistors and Capacitors can be matched extremely well
 
 ---
 
+# Diodes
 
+Many, many ways
 
+Reverse bias diodes to ground are useful for signals with long routing to transistor gate. Protects gate from breakdown during chemical mechanical polish.
 
-# Combine transistors
-
-![right fit](../media/l6/fig_saremx.pdf)
+![right fit](../media/l6/diodes.pdf)
 
 ---
+
+# Electrostatic Discharge 
+
+If you make an IC, you must consider Electrostatic Discharge (ESD) Protection circuits
+
+![right fit](https://media.wiley.com/product_data/coverImage300/18/04714987/0471498718.jpg)
+
+Standards for testing at [JEDEC](https://www.jedec.org/category/technology-focus-area/esd-electrostatic-discharge-0)
+
+## But I just want a digital input, what do I need?
+
+---
+
+![original fit](../media/l6/esd.pdf)
+
+---
+
+#[fit] Input buffer
+
+![right fit](../media/l6/fig_methodology.pdf)
+
+
+---
+
+
 
 #[fit] Thanks!
 

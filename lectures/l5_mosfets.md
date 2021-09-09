@@ -431,6 +431,10 @@ In intrinsic silicon:
 
 ---
 
+![original fit](https://patentimages.storage.googleapis.com/9d/08/77/b6842f1e219aba/imgf0001.png)
+
+---
+
 #[fit] Hot carrier injection
 
 ---
