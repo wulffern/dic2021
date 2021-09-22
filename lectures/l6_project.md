@@ -171,25 +171,6 @@ endmodule // graycounter
 
 ---
 
-# What you get
-
-[github.com/wulffern/dicex](https://github.com/wulffern/dicex)
-
-```
-project/
-├── spice/
-│   ├── Makefile                # See https://www.gnu.org/software/make/manual/html_node/Introduction.html
-│   ├── pixelSensor.cir         # Almost empty circuit for pixelSensor
-│   └── pixelSensor_tb.cir      # SPICE testbench for pixelSensor, emulates verilog
-└── verilog/
-    ├── Makefile                
-    ├── pixelSensor.fl          # Verilog file list
-    ├── pixelSensor_tb.gtkw     # Save file for GTKWave
-    ├── pixelSensor_tb.v        # Verilog testbench for pixelSensor
-    └── pixelSensor.v           # Verilog model of analog pixelSensor circuit
-```
-
----
 
 ![original fit](../media/l6/sensor.pdf)
 
@@ -205,6 +186,7 @@ Time evolution (transient analysis) is a numerical analysis to differential equa
 2. Go to 1
 
 
+For more info, see [In a Nutshell: How SPICE Works](https://www.emcs.org/acstrial/newsletters/summer09/HowSpiceWorks.pdf)
 
 Can simulate digital circuits, but very slowly
 
@@ -234,6 +216,26 @@ Provide analog-to-digital and digital-to-analog converters to "mirror" signals i
 Not sure there is an open source mixed-signal simulator
 
 ![right fit](../media/l6/mixedsims.pdf)
+
+---
+
+# What you get
+
+[github.com/wulffern/dicex](https://github.com/wulffern/dicex)
+
+```
+project/
+├── spice/
+│   ├── Makefile                # See https://www.gnu.org/software/make/manual/html_node/Introduction.html
+│   ├── pixelSensor.cir         # Almost empty circuit for pixelSensor
+│   └── pixelSensor_tb.cir      # SPICE testbench for pixelSensor, emulates verilog
+└── verilog/
+    ├── Makefile                
+    ├── pixelSensor.fl          # Verilog file list
+    ├── pixelSensor_tb.gtkw     # Save file for GTKWave
+    ├── pixelSensor_tb.v        # Verilog testbench for pixelSensor
+    └── pixelSensor.v           # Verilog model of analog pixelSensor circuit
+```
 
 ---
 
@@ -309,10 +311,6 @@ Add a testbench for each subcircuit (COMP, SENSOR, MEMCELL, MEMORY)
   - SystemVerilog netlists
   - SystemVerilog testbenches
   
----
-
-# You need to start now to be able to complete the project with a good grade
-
 ---
 
 # Proposed plan
