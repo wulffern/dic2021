@@ -44,7 +44,7 @@ Differential Pair Demo
 
 # Simulation Program with Integrated Circuit Emphasis (SPICE)
 
-Created in 1973 by Nagel and Pederson
+Published in 1973 by Nagel and Pederson
 
 *SPICE (Simulation Program with Integrated Circuit Emphasis)*
 
@@ -89,7 +89,7 @@ Or in the most expensive analog tool (Cadence Spectre)
 
 ---
 
-The expensive tools have built graphical user interface around the SPICE simulator to make it easier to run many time. Simplifies running multiple PVT corners (maybe 320 simulations).
+The expensive tools have built graphical user interface around the SPICE simulator to make it easier to run many times. Simplifies running multiple PVT corners (maybe 320 simulations).
 
 | Corner | Typical | Fast | Slow | All |
 |:---|:---|:---|:---|:---|
@@ -113,7 +113,9 @@ The expensive tools have built graphical user interface around the SPICE simulat
 
 [.column]
 
-Independent current sources (I)
+### Independent current sources
+
+<sub>Infinite output impedance, changing voltage does not change current</sub>
 
 ```
 I<name> <from> <to> dc <number> ac <number>
@@ -123,9 +125,13 @@ I2 VDP 0 dc Ip
 
 ```
 
+
+
 [.column]
 
-Independent voltage source (V)
+### Independent voltage source 
+
+<sub>Zero output impedance, changing current does not change voltage</sub>
 
 ```
 V<name> <+> <-> dc <number> ac <number>
@@ -171,8 +177,9 @@ C5 N1 N2 1u
 
 # Transistors
 
-Needs a model file
+Needs a model file the transistor model
 
+BSIM (Berkeley Short-channel IGFET Model)
 [http://bsim.berkeley.edu/models/bsim4/](http://bsim.berkeley.edu/models/bsim4/)
 
 ---
@@ -243,7 +250,7 @@ M2 VDP VDP VDD VDD pmos W=0.6u L=0.15u
 ---
 # Predictive technology models (PTM 0.13 um)
 
-Design of Integrated Circuits use [Predictive Technology Models](http://ptm.asu.edu).
+TFE4152 use [Predictive Technology Models](http://ptm.asu.edu)
 
 "Fictional" models, but that may be close to reality if the right foundry is chosen
 
@@ -273,7 +280,7 @@ Design of Integrated Circuits use [Predictive Technology Models](http://ptm.asu.
 
 # Find right transistor sizes
 
-Assume active ($$V_{ds} > V_{eff}$$ in strong inversion, or $$V_{ds} > 3 V_T$$ in weak inversion). For a diode connected transistor, that is always true.
+Assume active ($$V_{ds} > V_{eff}$$ in strong inversion, or $$V_{ds} > 3 V_T$$ in weak inversion). For diode connected transistors, that is always true.
 
 Weak inversion: 
 $$ I_{D} = I_{D0} \frac{W}{L} e^{V_eff / n V_T} $$, $$V_{eff} \propto \ln{I_D} $$
@@ -325,8 +332,6 @@ Current mirrors $$\Rightarrow L \approx 4 \times L_{min} $$
 Choose sizes that have been used by foundry for measurement to match SPICE model
 
 ---
-
-
 
 # $$ L = 0.13 \text{ um} \times 1.2 \approx  0.15\text{ um}$$
 
@@ -502,6 +507,16 @@ XM3h IDN3 VDN VSS VSS NCHCM
 ---
 
 #[fit] Diffpair <sub><sub>really an Operational transconductance amplifier</sub></sub>
+---
+
+# Problem statement: I need to copy a voltage with a DC gain of 1
+
+---
+
+# Solution: Unity gain feedback OTA
+
+
+
 ---
 
 Bias current $$I = 1\text{ } \mu A$$, $$I_p = I_n = 0.5\text{ } \mu A $$

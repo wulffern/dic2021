@@ -1,0 +1,31 @@
+digraph G{
+
+
+
+  node [margin=0.5 color=blue fontcolor=black fontsize=20 width=0.5 shape=box fontname="Helvetica"]
+I [label="Idea",shape=egg]
+D [label="Digital Design (SystemVerilog)"]
+S [label="Simulation (iverilog/vpp/verilator/gtkwave)"]
+SY [label="Synthesis (yosys)"]
+TA [label="Timing analysis (OpenTimer)"]
+PNR [label="Place and route"]
+LAT [label="Top layout"]
+TO [label="Tapeout",shape=egg]
+
+AD [label="Analog design (SPICE netlist)"]
+AS [label="Simulation (aimspice,ngspice)"]
+AL [label="Analog layout"]
+
+D -> S -> SY -> TA -> PNR -> LAT
+PNR -> TA -> SY -> S -> D
+
+
+AD -> D [label="SystemVerilog Model" fontsize=15 fontname=Helvetica]
+
+I -> AD
+I -> D
+
+AD -> AS -> AL -> LAT
+AL -> AS -> AD
+LAT-> TO
+}

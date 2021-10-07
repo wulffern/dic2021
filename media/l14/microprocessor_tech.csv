@@ -1,0 +1,215 @@
+Date,Name,Developer,Max clock,Word size(bits),Process,Chips[1],Transistors,MOSFET,Ref
+1971,4004,Intel,740 kHz,4,10 μm,1,"2,250",pMOS,[1]
+1972,PPS-25,Fairchild,400 kHz,4,,2,,pMOS,[2][a]
+1972,μPD700,NEC,,4,,1,,,[3]
+1972,8008,Intel,500 kHz,8,10 μm,1,"3,500",pMOS,
+1972,PPS-4,Rockwell,200 kHz,4,,1,,pMOS,[4][5]
+1973,μCOM-4,NEC,2 MHz,4,7.5 μm,1,"2,500",NMOS,[6][7][3][1]
+1973,TLCS-12,Toshiba,1 MHz,12,6 μm,1,"2,800 silicon gates",pMOS,[8][9][1]
+1973,Mini-D,Burroughs,1 MHz,8,,1,,pMOS,[10]
+1974,IMP-8,National,715 kHz,8,,3,,pMOS,[8]
+1974,8080,Intel,2 MHz,8,6 μm,1,"6,000",NMOS,
+1974,μCOM-8,NEC,2 MHz,8,,1,,NMOS,[3][1]
+1974,5065,Mostek,1.4 MHz,8,,1,,pMOS,[11]
+1974,μCOM-16,NEC,2 MHz,16,,2,,NMOS,[3][1]
+1974,IMP-4,National,500 kHz,4,,3,,pMOS,[8]
+1974,4040,Intel,740 kHz,4,10 μm,1,"3,000",pMOS,
+1974,6800,Motorola,1 MHz,8,-,1,"4,100",NMOS,[8]
+1974,TMS 1000,Texas Instruments,400 kHz,4,8 μm,1,"8,000",,
+1974,PACE,National,,16,,1,,pMOS,[12][13]
+1974,ISP-8A/500 (SC/MP),National,1 MHz,8,,1,,pMOS,
+1975,6100,Intersil,4 MHz,12,-,1,"4,000",CMOS,[14][15]
+1975,TLCS-12A,Toshiba,1.2 MHz,12,-,1,,pMOS,[1]
+1975,2650,Signetics,1.2 MHz,8,,1,,NMOS,[8]
+1975,PPS-8,Rockwell,256 kHz,8,,1,,pMOS,[8]
+1975,F-8,Fairchild,2 MHz,8,,1,,NMOS,[8]
+1975,CDP 1801,RCA,2 MHz,8,5 μm,2,"5,000",CMOS,[16][17]
+1975,6502,MOS Technology,1 MHz,8,-,1,"3,510",NMOS (dynamic),
+1975,IMP-16,National,715 kHz,16,,5,,pMOS,[18][1][19]
+1975,PFL-16A (MN 1610),Panafacom,2 MHz,16,-,1,,NMOS,[1]
+1975,BPC,Hewlett Packard,10 MHz,16,-,1,"6,000 (+ ROM)",NMOS,[20][21]
+1975,MCP-1600,Western Digital,3.3 MHz,16,-,3,,NMOS,
+1975,CP1600,General Instrument,3.3 MHz,16,,1,,NMOS,[12][22][23][1]
+1976,CDP 1802,RCA,6.4 MHz,8,,1,,CMOS,[24][25]
+1976,Z-80,Zilog,2.5 MHz,8,4 μm,1,"8,500",NMOS,
+1976,TMS9900,Texas Instruments,3.3 MHz,16,-,1,"8,000",,
+1976,8x300,Signetics,8 MHz,8,,1,,Bipolar,[26][27]
+1977,Bellmac-8 (WE212),Bell Labs,2.0 MHz,8,5 μm,1,"7,000",CMOS,
+1977,8085,Intel,3.0 MHz,8,3 μm,1,"6,500",,
+1977,MC14500B,Motorola,1.0 MHz,1,,1,,CMOS,
+1978,6809,Motorola,1 MHz,8,5 μm,1,"9,000",,
+1978,8086,Intel,5 MHz,16,3 μm,1,"29,000",,
+1978,6801,Motorola,-,8,5 μm,1,"35,000",,
+1979,Z8000,Zilog,-,16,-,1,"17,500",,
+1979,8088,Intel,5 MHz,8/16[b],3 μm,1,"29,000",NMOS (HMOS),
+1979,68000,Motorola,8 MHz,16/32[c],3.5 μm,1,"68,000",NMOS (HMOS),[28]
+1980,16032,National Semiconductor,-,16/32,-,"60,000"
+1981,6120,Harris Corporation,10 MHz,12,-,"20,000 (CMOS)[29]"
+1981,ROMP,IBM,10 MHz,32,2 μm,"45,000"
+1981,T-11,DEC,2.5 MHz,16,5 μm,"17,000 (NMOS)"
+1982,RISC-I[30],UC Berkeley,1 MHz,-,5 μm,"44,420 (NMOS)"
+1982,FOCUS,Hewlett Packard,18 MHz,32,1.5 μm,"450,000"
+1982,80186,Intel,6 MHz,16,-,"55,000"
+1987,80C186,Intel,10 MHz,16,-,"56,000 (CMOS)"
+1982,80188,Intel,8 MHz,8/16,-,"29,000"
+1982,80286,Intel,6 MHz,16,1.5 μm,"134,000"
+1983,RISC-II,UC Berkeley,3 MHz,-,3 μm,"40,760 (NMOS)"
+1983,MIPS[31],Stanford University,2 MHz,32,3 μm,"25,000"
+1983,65816,Western Design Center,-,16,-,-
+1984,68020,Motorola,16 MHz,32,2 μm,"190,000"
+1984,NS32032,National Semiconductor,-,32,-,"70,000"
+1984,V20,NEC,5 MHz,8/16,-,"63,000"
+1985,80386,Intel,16–40 MHz,32,1.5 μm,"275,000"
+1985,MicroVax II 78032,DEC,5 MHz,32,3.0 μm,"125,000"
+1985,R2000,MIPS,8 MHz,32,2 μm,"115,000"
+1985[32],Novix NC4016,Harris Corporation,8 MHz,16,3 μm[33],"16,000[34]"
+1986,Z80000,Zilog,-,32,-,"91,000"
+1986,SPARC MB86900,Fujitsu[35][36][37],40 MHz,32,0.8 μm,"800,000"
+1986,V60[38],NEC,16 MHz,16/32,1.5 μm,"375,000"
+1987,CVAX 78034,DEC,12.5 MHz,32,2.0 μm,"134,000"
+1987,ARM2,Acorn,8 MHz,32,2 μm,"25,000[39]"
+1987,Gmicro/200[40],Hitachi,-,-,1 μm,"730,000"
+1987,68030,Motorola,16 MHz,32,1.3 μm,"273,000"
+1987,V70[38],NEC,20 MHz,16/32,1.5 μm,"385,000"
+1988,R3000,MIPS,25 MHz,32,1.2 μm,"120,000"
+1988,80386SX,Intel,12–33 MHz,16/32,-,-
+1988,i960,Intel,10 MHz,33/32,1.5 μm,"250,000"
+1989,i960CA[41],Intel,16–33 MHz,33/32,0.8 μm,"600,000"
+1989,"VAX DC520 ""Rigel""",DEC,35 MHz,32,1.5 μm,"320,000"
+1989,80486,Intel,25 MHz,32,1 μm,"1,180,000"
+1989,i860,Intel,25 MHz,32,1 μm,"1,000,000"
+1990,68040,Motorola,40 MHz,32,-,1.2,
+1990,POWER1,IBM,20–30 MHz,32,"1,000 nm",6.9,
+1991,R4000,MIPS Computer Systems,100 MHz,64,800 nm,1.35,
+1991,NVAX,DEC,62.5–90.91 MHz,-,750 nm,1.3,
+1991,RSC,IBM,33 MHz,32,800 nm,1.0[42],
+1992,SH-1,Hitachi,20 MHz,32,800 nm,0.6[44],
+1992,Alpha 21064,DEC,100–200 MHz,64,750 nm,1.68,
+1992,microSPARC I,Sun,40–50 MHz,32,800 nm,0.8,
+1992,PA-7100,Hewlett Packard,100 MHz,32,800 nm,0.85[45],
+1992,486SLC,Cyrix,40 MHz,16,,,
+1993,HARP-1,Hitachi,120 MHz,-,500 nm,2.8[46],
+1993,PowerPC 601,"IBM, Motorola",50–80 MHz,32,600 nm,2.8,
+1993,Pentium,Intel,60–66 MHz,32,800 nm,3.1,
+1993,POWER2,IBM,55–71.5 MHz,32,720 nm,23,
+1994,microSPARC II,Fujitsu,60–125 MHz,-,500 nm,2.3,
+1994,68060,Motorola,50 MHz,32,600 nm,2.5,
+1994,Alpha 21064A,DEC,200–300 MHz,64,500 nm,2.85,
+1994,R4600,QED,100–125 MHz,64,650 nm,2.2,
+1994,PA-7200,Hewlett Packard,125 MHz,32,550 nm,1.26,
+1994,PowerPC 603,"IBM, Motorola",60–120 MHz,32,500 nm,1.6,
+1994,PowerPC 604,"IBM, Motorola",100–180 MHz,32,500 nm,3.6,
+1994,PA-7100LC,Hewlett Packard,100 MHz,32,750 nm,0.90,
+1995,Alpha 21164,DEC,266–333 MHz,64,500 nm,9.3,
+1995,UltraSPARC,Sun,143–167 MHz,64,470 nm,5.2,
+1995,SPARC64,HAL Computer Systems,101–118 MHz,64,400 nm,-,
+1995,Pentium Pro,Intel,150–200 MHz,32,350 nm,5.5,
+1996,Alpha 21164A,DEC,400–500 MHz,64,350 nm,9.7,
+1996,K5,AMD,75–100 MHz,32,500 nm,4.3,
+1996,R10000,MTI,150–250 MHz,64,350 nm,6.7,
+1996,R5000,QED,180–250 MHz,-,350 nm,3.7,
+1996,SPARC64 II,HAL Computer Systems,141–161 MHz,64,350 nm,-,
+1996,PA-8000,Hewlett-Packard,160–180 MHz,64,500 nm,3.8,
+1996,P2SC,IBM,150 MHz,32,290 nm,15,
+1997,SH-4,Hitachi,200 MHz,-,200 nm[47],10[48],
+1997,RS64,IBM,125 MHz,64,? nm,?,
+1997,Pentium II,Intel,233–300 MHz,32,350 nm,7.5,
+1997,PowerPC 620,"IBM, Motorola",120–150 MHz,64,350 nm,6.9,
+1997,UltraSPARC IIs,Sun,250–400 MHz,64,350 nm,5.4,
+1997,S/390 G4,IBM,370 MHz,32,500 nm,7.8,
+1997,PowerPC 750,"IBM, Motorola",233–366 MHz,32,260 nm,6.35,
+1997,K6,AMD,166–233 MHz,32,350 nm,8.8,
+1998,RS64-II,IBM,262 MHz,64,350 nm,12.5,
+1998,Alpha 21264,DEC,450–600 MHz,64,350 nm,15.2,
+1998,MIPS R12000,SGI,270–400 MHz,64,250–180 nm,6.9,
+1998,RM7000,QED,250–300 MHz,-,250 nm,18,
+1998,SPARC64 III,HAL Computer Systems,250–330 MHz,64,240 nm,17.6,
+1998,S/390 G5,IBM,500 MHz,32,250 nm,25,
+1998,PA-8500,Hewlett Packard,300–440 MHz,64,250 nm,140,
+1998,POWER3,IBM,200 MHz,64,250 nm,15,
+1999,Emotion Engine,"Sony, Toshiba",294–300 MHz,-,180–65 nm[49],13.5[50],
+1999,Pentium III,Intel,450–600 MHz,32,250 nm,9.5,
+1999,RS64-III,IBM,450 MHz,64,220 nm,34,2
+1999,PowerPC 7400,Motorola,350–500 MHz,32,200–130 nm,10.5,
+1999,Athlon,AMD,500–1000 MHz,32,250 nm,22,
+2000,Athlon XP,AMD,1.33–1.73 GHz,180 nm,37.5,1 / 1
+2000,Duron,AMD,550 MHz–1.3 GHz,180 nm,25,1 / 1
+2000,RS64-IV,IBM,600–750 MHz,180 nm,44,1 / 2
+2000,Pentium 4,Intel,1.3–2 GHz,180–130 nm,42,1 / 1
+2000,SPARC64 IV,Fujitsu,450–810 MHz,130 nm,-,1 / 1
+2000,z900,IBM,918 MHz,180 nm,47,"1 / 12, 20"
+2001,MIPS R14000,SGI,500–600 MHz,130 nm,7.2,1 / 1
+2001,POWER4,IBM,1.1–1.4 GHz,180–130 nm,174,"2 / 1, 4"
+2001,UltraSPARC III,Sun,750–1200 MHz,130 nm,29,1 / 1
+2001,Itanium,Intel,733–800 MHz,180 nm,25,1 / 1
+2001,PowerPC 7450,Motorola,733–800 MHz,180–130 nm,33,1 / 1
+2002,SPARC64 V,Fujitsu,1.1–1.35 GHz,130 nm,190,1 / 1
+2002,Itanium 2,Intel,0.9–1 GHz,180 nm,410,1 / 1
+2003,PowerPC 970,IBM,1.6–2.0 GHz,130–90 nm,52,1 / 1
+2003,Pentium M,Intel,0.9–1.7 GHz,130–90 nm,77,1 / 1
+2003,Opteron,AMD,1.4–2.4 GHz,130 nm,106,1 / 1
+2004,POWER5,IBM,1.65–1.9 GHz,130–90 nm,276,"2 / 1, 2, 4"
+2004,PowerPC BGL,IBM,700 MHz,130 nm,95,2 / 1
+2005,"Opteron ""Athens""",AMD,1.6–3.0 GHz,90 nm,114,1 / 1
+2005,Pentium D,Intel,2.8–3.2 GHz,90 nm,115,1 / 2
+2005,Athlon 64 X2,AMD,2–2.4 GHz,90 nm,243,2 / 1
+2005,PowerPC 970MP,IBM,1.2–2.5 GHz,90 nm,183,2 / 1
+2005,UltraSPARC IV,Sun,1.05–1.35 GHz,130 nm,66,2 / 1
+2005,UltraSPARC T1,Sun,1–1.4 GHz,90 nm,300,8 / 1
+2005,Xenon,IBM,3.2 GHz,90–45 nm,165,3 / 1
+2006,Core Duo,Intel,1.1–2.33 GHz,90–65 nm,151,2 / 1
+2006,Core 2,Intel,1.06–2.67 GHz,65–45 nm,291,"2 / 1, 2"
+2006,Cell/B.E.,"IBM, Sony, Toshiba",3.2–4.6 GHz,90–45 nm,241,1+8 / 1
+2006,"Itanium ""Montecito""",Intel,1.4–1.6 GHz,90 nm,1720,2 / 1
+2007,POWER6,IBM,3.5–4.7 GHz,65 nm,790,2 / 1
+2007,SPARC64 VI,Fujitsu,2.15–2.4 GHz,90 nm,543,2 / 1
+2007,UltraSPARC T2,Sun,1–1.4 GHz,65 nm,503,8 / 1
+2007,TILE64,Tilera,600–900 MHz,90–45 nm,?,64 / 1
+2007,"Opteron ""Barcelona""",AMD,1.8–3.2 GHz,65 nm,463,4 / 1
+2007,PowerPC BGP,IBM,850 MHz,90 nm,208,4 / 1
+2008,Phenom,AMD,1.8–2.6 GHz,65 nm,450,"2, 3, 4 / 1"
+2008,z10,IBM,4.4 GHz,65 nm,993,4 / 7
+2008,PowerXCell 8i,IBM,2.8–4.0 GHz,65 nm,250,1+8 / 1
+2008,SPARC64 VII,Fujitsu,2.4–2.88 GHz,65 nm,600,4 / 1
+2008,Atom,Intel,0.8–1.6 GHz,65–45 nm,47,1 / 1
+2008,Core i7,Intel,2.66–3.2 GHz,45–32 nm,730,"2, 4, 6 / 1"
+2008,TILEPro64,Tilera,600–866 MHz,90–45 nm,?,64 / 1
+2008,"Opteron ""Shanghai""",AMD,2.3–2.9 GHz,45 nm,751,4 / 1
+2009,Phenom II,AMD,2.5–3.2 GHz,45 nm,758,"2, 3, 4, 6 / 1"
+2009,"Opteron ""Istanbul""",AMD,2.2–2.8 GHz,45 nm,904,6 / 1
+2010,POWER7,IBM,3–4.14 GHz,45 nm,1200,"4, 6, 8 / 1, 4",4
+2010,"Itanium ""Tukwila""",Intel,2 GHz,65 nm,2000,"2, 4 / 1",2
+2010,"Opteron ""Magny-cours""",AMD,1.7–2.4 GHz,45 nm,1810,"4, 6 / 2",1
+2010,"Xeon ""Nehalem-EX""",Intel,1.73–2.66 GHz,45 nm,2300,"4, 6, 8 / 1",2
+2010,z196,IBM,3.8–5.2 GHz,45 nm,1400,"4 / 1, 6",1
+2010,SPARC T3,Sun,1.6 GHz,45 nm,2000,16 / 1,8
+2010,SPARC64 VII+,Fujitsu,2.66–3.0 GHz,45 nm,?,4 / 1,2
+2010,"Intel ""Westmere""",Intel,1.86–3.33 GHz,32 nm,1170,4–6 / 1,2
+2011,"Intel ""Sandy Bridge""",Intel,1.6–3.4 GHz,32 nm,995[51],"2, 4 / 1","(1,) 2"
+2011,AMD Llano,AMD,1.0–1.6 GHz,40 nm,380[52],"1, 2 / 1",1
+2011,Xeon E7,Intel,1.73–2.67 GHz,32 nm,2600,"4, 6, 8, 10 / 1",1–2
+2011,Power ISA BGQ,IBM,1.6 GHz,45 nm,1470,18 / 1,4
+2011,SPARC64 VIIIfx,Fujitsu,2.0 GHz,45 nm,760,8 / 1,2
+2011,"FX ""Bulldozer"" Interlagos",AMD,3.1–3.6 GHz,32 nm,1200[53],4–8 / 2,1
+2011,SPARC T4,Oracle,2.8–3 GHz,40 nm,855,8 / 1,8
+2012,SPARC64 IXfx,Fujitsu,1.848 GHz,40 nm,1870,16 / 1,2
+2012,zEC12,IBM,5.5 GHz,32 nm,2750,6 / 6,1
+2012,POWER7+,IBM,3.1–5.3 GHz,32 nm,2100,"8 / 1, 2",4
+2012,"Itanium ""Poulson""",Intel,1.73–2.53 GHz,32 nm,3100,8 / 1,2
+2013,"Intel ""Haswell""",Intel,1.9–4.4 GHz,22 nm,1400,4 / 1,2
+2013,SPARC64 X,Fujitsu,2.8–3 GHz,28 nm,2950,16 / 1,2
+2013,SPARC T5,Oracle,3.6 GHz,28 nm,1500,16 / 1,8
+2014,POWER8,IBM,2.5–5 GHz,22 nm,4200,"6, 12 / 1, 2",8
+2014,"Intel ""Broadwell""",Intel,1.8-4 GHz,14 nm,1900,"2, 4, 6, 8, 12, 16 / 1, 2, 4",2
+2015,z13,IBM,5 GHz,22 nm,3990,8 / 1,2
+2015,A8-7670K,AMD,3.6 GHz,28 nm,2410,4 / 1,1
+2017,Zen,AMD,3.2–4.1 GHz,14 nm,4800,"8, 16, 32 / 1, 2, 4",2
+2017,z14,IBM,5.2 GHz,14 nm,6100,10 / 1,2
+2017,POWER9,IBM,4 GHz,14 nm,8000,"12, 24 / 1","4, 8"
+2017,SPARC M8[54],Oracle,5 GHz,20 nm,"~10,000[55]",32,8
+2018,"Intel ""Cannon Lake""",Intel,2.2-3.2 GHz,10 nm,?,2 / 1,2
+2018,Zen+,AMD,2.8-3.7 GHz,12 nm,4800,"2, 4, 6, 8, 12, 16, 24, 32 / 1, 2, 4","1, 2"
+2019,Zen 2,AMD,2-4.7 GHz,7 nm,3900,"6, 8, 12, 16, 24, 32, 64 / 1, 2, 4",2
+2019,z15,IBM,5.2 GHz,14 nm,9200,12 / 1,2
+2020,Zen 3,AMD,3.4–4.9 GHz,7 nm,?,"6, 8, 12, 16 /",2
+2020,M1,Apple,3.2 GHz,5 nm,16000,8,1
