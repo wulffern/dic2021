@@ -46,7 +46,8 @@ How to simulate comparator in pixel?
 
 ---
 # System (How stuff works)
-How to check that stuff works?
+How to check that stuff works? (Academia and Industry)
+
 
 ---
 # IC Manufacture
