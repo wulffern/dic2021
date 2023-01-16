@@ -31,8 +31,6 @@ show_excerpts: false
 future: true
 
 minima:
-  skin: auto
-
   social_links:
     - { platform: github,         user_url: "https://github.com/wulffern/rply_bias_sky130nm" }
     - { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=uMepikoAAAAJ&hl=en&oi=ao" }
