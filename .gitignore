@@ -4,3 +4,5 @@
 tmp/
 *.aux
 auctex-auto
+_site
+
