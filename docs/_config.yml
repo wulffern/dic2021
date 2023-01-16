@@ -31,7 +31,7 @@ show_excerpts: false
 future: true
 
 minima:
-  skin: classic
+  skin: auto
 
   social_links:
     - { platform: github,         user_url: "https://github.com/wulffern/rply_bias_sky130nm" }
