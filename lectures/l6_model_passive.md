@@ -309,7 +309,7 @@ Absolute value for resistors and capacitors $$\approx \pm 10$$% to $$\pm 20$$%
 
 Relative precision for closely spaced devices $$ \approx 0.1\text{ % to } 1 \text{%}$$ 
 
-Relative precision for devices on same die $$ > 2 \text{%}$$ or more 
+Relative precision for devices on same die $$ > 2 $$% or more 
 
 ---
 
