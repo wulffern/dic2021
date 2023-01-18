@@ -301,7 +301,7 @@ def cli():
 
 @cli.command()
 @click.argument("filename")
-@click.option("--root",default="/aic2023/",help="Root of jekyll site")
+@click.option("--root",default="/dic2021/",help="Root of jekyll site")
 @click.option("--date",default="2023-01-01",help="Date to use")
 def post(filename,root,date):
     options = dict()

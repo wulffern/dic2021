@@ -1,0 +1,44 @@
+---
+layout: post
+title: sesame
+math: true
+---
+
+[Slides](/dic2021/assets/slides/sesame.html)
+
+
+
+
+
+* TOC
+{:toc }
+
+
+##  Sesame 
+
+
+Sesame is a Python3 package for solving the drift diffusion Poisson equations for multi-dimensional systems using finite differences.
+
+[Install instructions](https://sesame.readthedocs.io/en/latest/pre/INSTALL_beginner.html)
+
+
+
+<sub>Semiconductor current-flow equations (diffusion and degeneracy), R.Stratton,
+IEEE Transactions on Electron Devices
+[https://ieeexplore.ieee.org/document/1477063](https://ieeexplore.ieee.org/document/1477063)</sub>
+
+![](/dic2021/assets/current_flow.png)
+
+
+![](/dic2021/assets/sesame_setup.png)
+
+
+![](/dic2021/assets/sesame_sim.png)
+
+
+![](/dic2021/assets/sesame_result.png)
+
+
+
+
+

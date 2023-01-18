@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>lectures/l19_radios</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">lectures/l19_radios</h1>
+</div>
+<div class="slide section level1">
+
+<h2 id="tfe4152---lecture-19">TFE4152 - Lecture 19</h2>
+<h2 id="all-radios-started-with-euler">All radios started with <a
+href="https://en.wikipedia.org/wiki/Leonhard_Euler">Euler</a></h2>
+<h2 id="source"><a
+href="https://github.com/wulffern/dic2021/blob/main/lectures/l19_radios.md">Source</a></h2>
+</div>
+<div class="slide section level1">
+
+<p><span
+class="math display"><em>e</em><sup><em>i</em><em>x</em></sup> = <em>c</em><em>o</em><em>s</em>(<em>x</em>) + <em>i</em><em>s</em><em>i</em><em>n</em>(<em>x</em>)</span></p>
+<p><span
+class="math display"><em>e</em><sup>−<em>i</em><em>x</em></sup> = <em>c</em><em>o</em><em>s</em>(−<em>x</em>) − <em>i</em><em>s</em><em>i</em><em>n</em>(−<em>x</em>) = <em>c</em><em>o</em><em>s</em>(<em>x</em>) − <em>i</em><em>s</em><em>i</em><em>n</em>(<em>x</em>)</span></p>
+<h2 id="section"><img
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Sine_cosine_plot.svg/800px-Sine_cosine_plot.svg.png" /></h2>
+<p><span
+class="math display"><em>e</em><sup><em>i</em><em>x</em></sup> = <em>c</em><em>o</em><em>s</em>(<em>x</em>) + <em>i</em><em>s</em><em>i</em><em>n</em>(<em>x</em>)</span></p>
+<p><span
+class="math display"><em>e</em><sup>−<em>i</em><em>x</em></sup> = <em>c</em><em>o</em><em>s</em>(−<em>x</em>) − <em>i</em><em>s</em><em>i</em><em>n</em>(−<em>x</em>) = <em>c</em><em>o</em><em>s</em>(<em>x</em>) − <em>i</em><em>s</em><em>i</em><em>n</em>(<em>x</em>)</span></p>
+<p><span
+class="math display"><em>c</em><em>o</em><em>s</em>(<em>x</em>) = <em>e</em><sup><em>i</em><em>x</em></sup> − <em>i</em><em>s</em><em>i</em><em>n</em>(<em>x</em>)</span></p>
+<p><span
+class="math display"> − <em>i</em><em>s</em><em>i</em><em>n</em>(<em>x</em>) = <em>e</em><sup>−<em>i</em><em>x</em></sup> − <em>c</em><em>o</em><em>s</em>(<em>x</em>)</span></p>
+<p><span
+class="math display"><em>c</em><em>o</em><em>s</em>(<em>x</em>) = <em>e</em><sup><em>i</em><em>x</em></sup> + <em>e</em><sup>−<em>i</em><em>x</em></sup> − <em>c</em><em>o</em><em>s</em>(<em>x</em>)</span></p>
+<p><span class="math display">$$  cos(x) = \frac{e^{ix} +
+e^{-ix}}{2}$$</span></p>
+</div>
+<div class="slide section level1">
+
+<p><span class="math display">$$ cos(x) \times cos(y) = \frac{e^{ix} +
+e^{-ix}}{2} \times \frac{e^{iy}
++e^{-iy}}{2} $$</span></p>
+<p><span class="math display">$$ \rightarrow \frac{1}{4}\left[
+e^{ix}e^{iy} + e^{-ix}e^{iy} + e^{ix}e^{-iy} +
+e^{-ix}e^{-iy}\right]$$</span></p>
+<p><span class="math display">$$ \rightarrow \frac{1}{4}\left[e^{i(x+y)}
++ e^{-i(x-y)} + e^{i(x-y)} + e^{-i (x + y)}\right]$$</span></p>
+<p><span class="math display">$$ \rightarrow
+\frac{1}{2}\left[\frac{e^{i(x+y)}+ e^{-i (x +y)}}{2} + \frac{e^{i(x-y)}
++ e^{-i (x-y)}}{2}\right]$$</span></p>
+<p><span class="math display">$$\Rightarrow cos(x) \times cos(y)
+=\frac{1}{2}\left[cos(x+y) + cos(x-y)\right]$$</span></p>
+</div>
+<div class="slide section level1">
+
+<h2 id="section-1"><img
+src="https://upload.wikimedia.org/wikipedia/commons/9/92/Phase_shifter_using_IQ_modulator.gif" /></h2>
+<p>An ideal square wave is an infinite sum of odd harmonics</p>
+<p><span class="math display">$$ x(t) =
+\frac{4}{\pi}\sum_{k=1}^{\infty}\frac{sin(2\pi(2k - 1)ft)}{2k-1}
+$$</span></p>
+<h2 id="section-2"><img
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Fourier_series_for_square_wave.gif/350px-Fourier_series_for_square_wave.gif" /></h2>
+<p><a
+href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1333231">Complex
+Signal Processing is Not Complex</a></p>
+<p><img src="/aic2023/assets/complex.png" /></p>
+</div>
+<div class="slide section level1">
+
+<h2 id="thanks">Thanks!</h2>
+</div>
+</body>
+</html>

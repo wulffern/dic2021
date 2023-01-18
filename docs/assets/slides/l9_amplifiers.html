@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>lectures/l9_amplifiers</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">lectures/l9_amplifiers</h1>
+</div>
+<div class="slide section level1">
+
+<h2 id="tfe4152---lecture-9">TFE4152 - Lecture 9</h2>
+<h2 id="current-mirrors-and-amplifiers">Current mirrors and
+Amplifiers</h2>
+<h2 id="source"><a
+href="https://github.com/wulffern/dic2021/blob/main/lectures/l9_cm.md">Source</a></h2>
+</div>
+<div class="slide section level1">
+
+<table>
+<colgroup>
+<col width="3%" />
+<col width="14%" />
+<col width="44%" />
+<col width="14%" />
+<col width="22%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Week</th>
+<th>Book</th>
+<th>Monday</th>
+<th>Book</th>
+<th>Friday</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>34</td>
+<td></td>
+<td>Introduction, what are we going to do in this course. Why do you
+need it?</td>
+<td>WH 1 , WH 15</td>
+<td>Manufacturing of integrated circuits</td>
+</tr>
+<tr class="even">
+<td>35</td>
+<td>CJM 1.1</td>
+<td>pn Junctions</td>
+<td>CJM 1.2 WH 1.3, 2.1-2.4</td>
+<td>Mosfet transistors</td>
+</tr>
+<tr class="odd">
+<td>36</td>
+<td>CJM 1.2 WH 1.3, 2.1-2.4</td>
+<td>Mosfet transistors</td>
+<td>CJM 1.3 - 1.6</td>
+<td>Modeling and passive devices</td>
+</tr>
+<tr class="even">
+<td>37</td>
+<td></td>
+<td>Guest Lecture - Sony</td>
+<td>CJM 3.1, 3.5, 3.6</td>
+<td>Current mirrors</td>
+</tr>
+<tr class="odd">
+<td>38</td>
+<td>CJM 3.2, 3.3,3.4 3.7</td>
+<td><strong>Amplifiers</strong></td>
+<td>CJM, CJM 2 WH 1.5</td>
+<td>SPICE simulation and layout</td>
+</tr>
+<tr class="even">
+<td>39</td>
+<td></td>
+<td>Verilog</td>
+<td></td>
+<td>Verilog</td>
+</tr>
+<tr class="odd">
+<td>40</td>
+<td>WH 1.4 WH 2.5</td>
+<td>CMOS Logic</td>
+<td>WH 3</td>
+<td>Speed</td>
+</tr>
+<tr class="even">
+<td>41</td>
+<td>WH 4</td>
+<td>Power</td>
+<td>WH 5</td>
+<td>Wires</td>
+</tr>
+<tr class="odd">
+<td>42</td>
+<td>WH 6</td>
+<td>Scaling Reliability and Variability</td>
+<td>WH 8</td>
+<td>Gates</td>
+</tr>
+<tr class="even">
+<td>43</td>
+<td>WH 9</td>
+<td>Sequencing</td>
+<td>WH 10</td>
+<td>Datapaths - Adders</td>
+</tr>
+<tr class="odd">
+<td>44</td>
+<td>WH 10</td>
+<td>Datapaths - Multipliers, Counters</td>
+<td>WH 11</td>
+<td>Memories</td>
+</tr>
+<tr class="even">
+<td>45</td>
+<td>WH 12</td>
+<td>Packaging</td>
+<td>WH 14</td>
+<td>Test</td>
+</tr>
+<tr class="odd">
+<td>46</td>
+<td></td>
+<td>Guest lecture - Nordic Semiconductor</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>47</td>
+<td>CJM</td>
+<td>Recap of CJM</td>
+<td>WH</td>
+<td>Recap of WH</td>
+</tr>
+</tbody>
+</table>
+<table style="width:6%;">
+<colgroup>
+<col width="5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>## Goal for today</td>
+</tr>
+<tr class="even">
+<td>Current mirrors</td>
+</tr>
+<tr class="odd">
+<td>Amplifiers</td>
+</tr>
+</tbody>
+</table>
+<h2 id="errata">Errata</h2>
+</div>
+<div class="slide section level1">
+
+<h2 id="process-variations---correction">Process variations -
+Correction</h2>
+<p><strong>Wrong</strong> Assume strong inversion and active
+<strong><span class="math display">$$ V_{eff} = \sqrt{2\mu_p C_{ox}
+\frac{W}{L} I_1} $$</span></strong></p>
+<p><strong>Correct</strong> Assume strong inversion and active
+<strong><span class="math display">$$ V_{eff} = \sqrt{\frac{2}{\mu_p
+C_{ox} \frac{W}{L}} I_1} $$</span></strong></p>
+</div>
+<div class="slide section level1">
+
+<h2 id="large-signal-vs-small-signal">Large signal vs <sub><sub><sub>
+small signal </sub></sub></sub></h2>
+</div>
+<div class="slide section level1">
+
+<p><img src="/aic2023/assets/ls_vs_ss.png" /></p>
+</div>
+<div class="slide section level1">
+
+<h2 id="i-ne-i"><span
+class="math display"><em>I</em> ≠ <em>i</em></span></h2>
+<h2 id="v-ne-v"><span
+class="math display"><em>V</em> ≠ <em>v</em></span></h2>
+<p><img src="/aic2023/assets/diode.png" /></p>
+</div>
+<div class="slide section level1">
+
+<h2 id="i-i_bias-i"><span
+class="math display"><em>I</em> = <em>I</em><sub><em>b</em><em>i</em><em>a</em><em>s</em></sub> + <em>i</em></span></h2>
+<h2 id="v-v_bias-v"><span
+class="math display"><em>V</em> = <em>V</em><sub><em>b</em><em>i</em><em>a</em><em>s</em></sub> + <em>v</em></span></h2>
+<p><img src="/aic2023/assets/diode.png" /></p>
+</div>
+<div class="slide section level1">
+
+<p><img src="/aic2023/assets/diode.png" /></p>
+<h2 id="current-mirror">Current Mirror</h2>
+<p><span class="math display"><em>M</em><sub>1</sub></span> is diode
+connected (<span
+class="math display"><em>V</em><sub><em>G</em></sub> = <em>V</em><sub><em>D</em></sub></span>)</p>
+<p><img src="/aic2023/assets/fig_cm.png" /></p>
+</div>
+<div class="slide section level1">
+
+<h2 id="current-mirror-r_in">Current mirror <span
+class="math display"><em>r</em><sub><em>i</em><em>n</em></sub></span></h2>
+<p><span class="math display">$$ r_{ds} = \frac{1}{g_{ds}} $$</span></p>
+<p><span class="math display">$$ r_{in} = \frac{v}{i} $$</span></p>
+<p><span
+class="math display"><em>i</em> = <em>g</em><sub><em>m</em></sub><em>v</em> + <em>g</em><sub><em>d</em><em>s</em></sub><em>v</em></span></p>
+<p><span class="math display">$$ r_{in} = \frac{1}{gm + gds} \approx
+\frac{1}{gm} $$</span></p>
+<p><img src="/aic2023/assets/diode_rin.png" /></p>
+<table style="width:6%;">
+<colgroup>
+<col width="5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>## Current mirror <span
+class="math display"><em>r</em><sub><em>o</em><em>u</em><em>t</em></sub></span></td>
+</tr>
+<tr class="even">
+<td>Output voltage does not affect <span
+class="math display"><em>v</em><sub><em>g</em><em>s</em></sub></span></td>
+</tr>
+<tr class="odd">
+<td><span
+class="math display"><em>r</em><sub><em>o</em><em>u</em><em>t</em></sub> = <em>r</em><sub><em>d</em><em>s</em></sub></span></td>
+</tr>
+<tr class="even">
+<td><img src="/aic2023/assets/diode_rout.png" /></td>
+</tr>
+</tbody>
+</table>
+<h2 id="source-degeneration">Source degeneration</h2>
+<p><img src="/aic2023/assets/fig_cmsf.png" /></p>
+<p>What is the operating region of M3 and M4?</p>
+<p>What is the operating region of M1 and M2?</p>
+</div>
+<div class="slide section level1">
+
+<p><img src="/aic2023/assets/fig_cmsf.png" /></p>
+<p><img src="/aic2023/assets/nmos_ro.png" /></p>
+</div>
+<div class="slide section level1">
+
+<p><img src="/aic2023/assets/fig_cmsf.png" /></p>
+<p><img src="/aic2023/assets/cmsdeg.png" /></p>
+</div>
+<div class="slide section level1">
+
+<p><img src="/aic2023/assets/cmsdeg.png" /></p>
+<p><img src="/aic2023/assets/cmsd_ss.png" /></p>
+</div>
+<div class="slide section level1">
+
+<p><img src="/aic2023/assets/cmsd_ss.png" /></p>
+<h2 id="source-degeneration-r_out">Source degeneration <span
+class="math display"><em>r</em><sub><em>o</em><em>u</em><em>t</em></sub></span></h2>
+<p><span
+class="math display"><em>v</em><sub><em>g</em><em>s</em>1</sub> = 0</span></p>
+<p><span
+class="math display"><em>v</em><sub><em>g</em><em>s</em>2</sub> =  − <em>v</em><sub><em>s</em></sub></span></p>
+<p><span
+class="math display"><em>i</em> = <em>g</em><sub><em>d</em><em>s</em>1</sub><em>v</em><sub><em>s</em></sub> ⇒ <em>v</em><sub><em>s</em></sub> = <em>i</em><em>r</em><sub><em>d</em><em>s</em>1</sub></span></p>
+<p><span class="math display">$$r_{out} = \frac{v}{i}$$</span></p>
+<p><span class="math display">$$i = -g_{m2} v_{s} + \frac{v -
+v_s}{r_{ds2}}$$</span></p>
+</div>
+<div class="slide section level1">
+
+<p><img src="/aic2023/assets/cmsd_ss.png" /></p>
+<p><span class="math display">$$i = -g_{m2} v_{s} + \frac{v -
+v_s}{r_{ds2}}$$</span> insert <span
+class="math display"><em>v</em><sub><em>s</em></sub> = <em>i</em><em>r</em><sub><em>d</em><em>s</em>1</sub></span></p>
+<p><span class="math display">$$i = -i g_{m2} r_{ds1} + \frac{v - i
+r_{ds1}}{r_{ds2}}$$</span></p>
+<p><span
+class="math display"><em>i</em><em>r</em><sub><em>d</em><em>s</em>2</sub> + <em>i</em><em>g</em><sub><em>m</em>2</sub><em>r</em><sub><em>d</em><em>s</em>1</sub><em>r</em><sub><em>d</em><em>s</em>2</sub> + <em>i</em><em>r</em><sub><em>d</em><em>s</em>1</sub> = <em>v</em></span></p>
+<p><span class="math display">$$  r_{ds2} + g_{m2}r_{ds1}r_{ds2} +
+r_{ds1} = \frac{v}{i} $$</span></p>
+<p><span class="math display">$$ r_{out} = r_{ds2} \left[1 + r_{ds1}
+\left( \frac{1}{r_{ds2}}  + g_{m2}\right )\right] $$</span></p>
+<p><span
+class="math display"><em>r</em><sub><em>o</em><em>u</em><em>t</em></sub> = <em>r</em><sub><em>d</em><em>s</em>2</sub>[1+<em>r</em><sub><em>d</em><em>s</em>1</sub>(<em>g</em><sub><em>m</em>2</sub>+<em>g</em><sub><em>d</em><em>s</em>2</sub>)]</span></p>
+</div>
+<div class="slide section level1">
+
+<p><img src="/aic2023/assets/cmsd_ss.png" /></p>
+<p><span
+class="math display"><em>r</em><sub><em>o</em><em>u</em><em>t</em></sub> = <em>r</em><sub><em>d</em><em>s</em>2</sub>[1+<em>r</em><sub><em>d</em><em>s</em>1</sub>(<em>g</em><sub><em>m</em>2</sub>+<em>g</em><sub><em>d</em><em>s</em>1</sub>)]</span></p>
+<p><img src="/aic2023/assets/nmos_ro.png" /></p>
+</div>
+<div class="slide section level1">
+
+<h2 id="cascode-current-mirror">Cascode current mirror</h2>
+<p>Same equation as source degeneration, but <span
+class="math display"><em>M</em><sub>2</sub></span> is in saturation</p>
+<p><span
+class="math display"><em>r</em><sub><em>d</em><em>s</em>2(saturation)</sub> &gt; <em>r</em><sub><em>d</em><em>s</em>2(linear)</sub></span></p>
+<p><span
+class="math display"><em>r</em><sub><em>o</em><em>u</em><em>t</em></sub> = <em>r</em><sub><em>d</em><em>s</em>4</sub>[1+<em>r</em><sub><em>d</em><em>s</em>2</sub>(<em>g</em><sub><em>m</em>4</sub>+<em>g</em><sub><em>d</em><em>s</em>2</sub>)]</span></p>
+<p><img src="/aic2023/assets/fig_cmCascode.png" /></p>
+</div>
+<div class="slide section level1">
+
+<p><img src="/aic2023/assets/fig_current_mirrors.png" /></p>
+</div>
+<div class="slide section level1">
+
+<h2 id="one-more-current-mirror">One more current mirror …</h2>
+</div>
+<div class="slide section level1">
+
+<p><sub><a href="https://ieeexplore.ieee.org/document/1597006">“High
+speed, high gain OTA in a digital 90nm CMOS technology” Berntsen, Wulff,
+Ytterdal</a></sub></p>
+<h2 id="image-..ipberntsen.png-removed">&gt; image ../ip/berntsen.png
+removed</h2>
+<h2 id="amplifiers">Amplifiers</h2>
+</div>
+<div class="slide section level1">
+
+<h2 id="source-follower">Source follower</h2>
+<table style="width:6%;">
+<colgroup>
+<col width="5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>## Source follower</td>
+</tr>
+<tr class="even">
+<td>Input resistance <span class="math display"> ≈ ∞</span></td>
+</tr>
+<tr class="odd">
+<td>Gain <span class="math display">$$ A =
+\frac{v_o}{v_i}$$</span>?</td>
+</tr>
+<tr class="even">
+<td>Output resistance <span
+class="math display"><em>r</em><sub><em>o</em><em>u</em><em>t</em></sub></span>?</td>
+</tr>
+<tr class="odd">
+<td><img src="/aic2023/assets/sf_ls.png" /></td>
+</tr>
+</tbody>
+</table>
+<p><img src="/aic2023/assets/sf_ls.png" /></p>
+<p><img src="/aic2023/assets/sf_ss.png" /></p>
+</div>
+<div class="slide section level1">
+
+<h2 id="source-follower---gain">Source follower - Gain</h2>
+<p><span
+class="math display"><em>i</em><sub><em>o</em></sub> = <em>v</em><sub><em>o</em></sub>(<em>g</em><sub><em>d</em><em>s</em></sub>+<em>g</em><sub><em>s</em></sub>) − <em>g</em><sub><em>m</em></sub><em>v</em><sub><em>i</em></sub> + <em>v</em><sub><em>o</em></sub><em>g</em><sub><em>m</em></sub></span></p>
+<p><span
+class="math display"><em>i</em><sub><em>o</em></sub> = 0</span></p>
+<p><span
+class="math display"><em>g</em><sub><em>m</em></sub><em>v</em><sub><em>i</em></sub> = <em>v</em><sub><em>o</em></sub>(<em>g</em><sub><em>m</em></sub>+<em>g</em><sub><em>s</em></sub>+<em>g</em><sub><em>d</em><em>s</em></sub>)</span></p>
+<p><span class="math display">$$ A = \frac{v_o}{v_i} = \frac{g_m}{g_m +
+g_{ds} + g_s} $$</span></p>
+<h2 id="gain-is-less-than-1">Gain is less than 1</h2>
+<p><img src="/aic2023/assets/sf_ss.png" /></p>
+</div>
+<div class="slide section level1">
+
+<h2 id="source-follower---r_out">Source follower - <span
+class="math display"><em>r</em><sub><em>o</em><em>u</em><em>t</em></sub></span></h2>
+<p><span
+class="math display"><em>i</em><sub><em>o</em></sub> = <em>v</em><sub><em>o</em></sub>(<em>g</em><sub><em>d</em><em>s</em></sub>+<em>g</em><sub><em>s</em></sub>) − <em>g</em><sub><em>m</em></sub><em>v</em><sub><em>i</em></sub> + <em>v</em><sub><em>o</em></sub><em>g</em><sub><em>m</em></sub></span></p>
+<p><span
+class="math display"><em>v</em><sub><em>i</em></sub> = 0</span></p>
+<p><span
+class="math display"><em>i</em><sub><em>o</em></sub> = <em>v</em><sub><em>o</em></sub>(<em>g</em><sub><em>d</em><em>s</em></sub>+<em>g</em><sub><em>s</em></sub>+<em>g</em><sub><em>m</em></sub>)</span></p>
+<p><span class="math display">$$ r_{out} = \frac{v_o}{i_o} =
+\frac{1}{g_m + g_{ds} + g_{s}} $$</span></p>
+<p><span class="math display">$$ r_{out} \approx
+\frac{1}{g_m}$$</span></p>
+<p><img src="/aic2023/assets/sf_ss.png" /></p>
+</div>
+<div class="slide section level1">
+
+<p><img src="/aic2023/assets/why_sf_not.png" /> <img
+src="/aic2023/assets/why_sf.png" /></p>
+</div>
+<div class="slide section level1">
+
+<p>Assume 100 electrons</p>
+<p><span
+class="math display"><em>Δ</em><em>V</em> = <em>Q</em>/<em>C</em> =  − 1.6 × 10<sup>−19</sup> × 100/(1×10<sup>−15</sup>) =  − 16
+mV</span></p>
+<p><img src="/aic2023/assets/why_sf.png" /></p>
+<p><span
+class="math display"><em>Δ</em><em>V</em> = <em>Q</em>/<em>C</em> =  − 1.6 × 10<sup>−19</sup> × 100/(1×10<sup>−12</sup>) =  − 16
+uV</span></p>
+<p><img src="/aic2023/assets/why_sf_not.png" /></p>
+</div>
+<div class="slide section level1">
+
+<h2 id="common-gate">Common gate</h2>
+</div>
+<div class="slide section level1">
+
+<h2 id="common-gate-1">Common gate</h2>
+<p>Input resistance ?</p>
+<p>Gain ?</p>
+<p>Output resistance ?</p>
+<p><img src="/aic2023/assets/cg_ls_rin.png" /></p>
+</div>
+<div class="slide section level1">
+
+<p><img src="/aic2023/assets/cg_ls_rin.png" /></p>
+<p><img src="/aic2023/assets/cg_ss_rin.png" /></p>
+</div>
+<div class="slide section level1">
+
+<h2 id="common-gate---r_in">Common gate - <span
+class="math display"><em>r</em><sub><em>i</em><em>n</em></sub></span></h2>
+<p><span
+class="math display"><em>i</em> = <em>g</em><sub><em>m</em></sub><em>v</em> + <em>g</em><sub><em>d</em><em>s</em></sub><em>v</em></span></p>
+<p><span class="math display">$$ r_{in} = \frac{1}{g_m + g_{ds}} \approx
+\frac{1}{g_m}$$</span></p>
+<p>However, we’ve ignored load resistance.</p>
+<p><span class="math display">$$ r_{in}  \approx \frac{1}{g_m}\left(1 +
+\frac{R_L}{r_{ds}}\right) $$</span></p>
+<p><img src="/aic2023/assets/cg_ss_rin.png" /></p>
+</div>
+<div class="slide section level1">
+
+<h2 id="common-gate---r_out">Common gate - <span
+class="math display"><em>r</em><sub><em>o</em><em>u</em><em>t</em></sub></span></h2>
+<p><img src="/aic2023/assets/cg_ls_rout.png" /></p>
+</div>
+<div class="slide section level1">
+
+<p><img src="/aic2023/assets/cg_ls_rout.png" /></p>
+<p><img src="/aic2023/assets/cg_ss_rout.png" /></p>
+</div>
+<div class="slide section level1">
+
+<h2 id="common-gate---r_out-1">Common gate - <span
+class="math display"><em>r</em><sub><em>o</em><em>u</em><em>t</em></sub></span></h2>
+<p><span
+class="math display"><em>r</em><sub><em>o</em><em>u</em><em>t</em></sub> = <em>r</em><sub><em>d</em><em>s</em></sub></span></p>
+<p><img src="/aic2023/assets/cg_ss_rout.png" /></p>
+</div>
+<div class="slide section level1">
+
+<h2 id="common-gate---gain">Common gate - Gain</h2>
+<p><img src="/aic2023/assets/cg_ls_a.png" /></p>
+</div>
+<div class="slide section level1">
+
+<p><img src="/aic2023/assets/cg_ls_a.png" /></p>
+<p><img src="/aic2023/assets/cg_ss_a.png" /></p>
+</div>
+<div class="slide section level1">
+
+<h2 id="common-gate---gain-1">Common gate - Gain</h2>
+<p><span class="math display">$$ i_{o} = - g_m v_{i} + \frac{v_{o} -
+v_{i}}{r_{ds}} $$</span></p>
+<p><span
+class="math display"><em>i</em><sub><em>o</em></sub> = 0</span></p>
+<p><span
+class="math display">0 =  − <em>g</em><sub><em>m</em></sub><em>v</em><sub><em>i</em></sub><em>r</em><sub><em>d</em><em>s</em></sub> + <em>v</em><sub><em>o</em></sub> − <em>v</em><sub><em>i</em></sub></span></p>
+<p><span
+class="math display"><em>v</em><sub><em>i</em></sub>(1+<em>g</em><sub><em>m</em></sub><em>r</em><sub><em>d</em><em>s</em></sub>) = <em>v</em><sub><em>o</em></sub></span></p>
+<p><span class="math display">$$ \frac{v_o}{v_i} = 1 + g_m r_{ds}
+$$</span></p>
+<p><img src="/aic2023/assets/cg_ss_a.png" /></p>
+</div>
+<div class="slide section level1">
+
+<h2 id="common-gate---gain-2">Common gate - Gain</h2>
+<p>We’ve ignored bulk effect (<span
+class="math display"><em>g</em><sub><em>s</em></sub></span>), source
+resistance (<span
+class="math display"><em>R</em><sub><em>S</em></sub></span>) and load
+resistance (<span
+class="math display"><em>R</em><sub><em>L</em></sub></span>)</p>
+<p><span class="math display">$$ A = \frac{(g_{m} + g_s +
+g_{ds})(R_L||r_{ds})}{1 + R_S\left(\frac{g_m + g_s +
+g_{ds}}{1 + R_L/r_{ds}}\right)}$$</span></p>
+<p>If <span
+class="math display"><em>R</em><sub><em>L</em></sub> &gt;  &gt; <em>r</em><sub><em>d</em><em>s</em></sub></span>,
+<span class="math display"><em>R</em><sub><em>S</em></sub> = 0</span>
+and <span
+class="math display"><em>g</em><sub><em>s</em></sub> = 0</span></p>
+<p><span class="math display">$$ A = \frac{(g_{m} + g_{ds})r_{ds}}{1} =
+1+ g_m r_{ds} $$</span></p>
+<p><img src="/aic2023/assets/cg_ss_a.png" /></p>
+</div>
+<div class="slide section level1">
+
+<h2 id="common-source">Common source</h2>
+</div>
+<div class="slide section level1">
+
+<h2 id="common-source-1">Common source</h2>
+<p>Input resistance <span
+class="math display"><em>r</em><sub><em>i</em><em>n</em></sub> ≈ ∞</span></p>
+<p>Output resistance <span
+class="math display"><em>r</em><sub><em>o</em><em>u</em><em>t</em></sub> = <em>r</em><sub><em>d</em><em>s</em></sub></span>,
+it’s same circuit as the output of a current mirror</p>
+<p>Gain ?</p>
+<p><img src="/aic2023/assets/cs_ls_a.png" /></p>
+</div>
+<div class="slide section level1">
+
+<p><img src="/aic2023/assets/cs_ls_a.png" /></p>
+<p><img src="/aic2023/assets/cs_ss_a.png" /></p>
+<table style="width:6%;">
+<colgroup>
+<col width="5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>## Common source - Gain</td>
+</tr>
+<tr class="even">
+<td><span class="math display">$$ i_{o} = g_m v_i + \frac{v_o}{r_{ds}}
+$$</span></td>
+</tr>
+<tr class="odd">
+<td><span
+class="math display"><em>i</em><sub><em>o</em></sub> = 0</span></td>
+</tr>
+<tr class="even">
+<td><span class="math display">$$ -g_m v_i = \frac{v_o}{r_{ds}}
+$$</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math display">$$ \frac{v_o}{v_i} = - g_m
+r_{ds}$$</span></td>
+</tr>
+<tr class="even">
+<td><img src="/aic2023/assets/cs_ss_a.png" /></td>
+</tr>
+</tbody>
+</table>
+<p><img src="/aic2023/assets/why_cs.png" /></p>
+<table style="width:6%;">
+<colgroup>
+<col width="5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>## Differential pair</td>
+</tr>
+<tr class="even">
+<td>Input resistance <span
+class="math display"><em>r</em><sub><em>i</em><em>n</em></sub> ≈ ∞</span></td>
+</tr>
+<tr class="odd">
+<td>Gain <span
+class="math display"><em>A</em> = <em>g</em><sub><em>m</em></sub><em>r</em><sub><em>d</em><em>s</em></sub></span></td>
+</tr>
+<tr class="even">
+<td>Output resistance <span
+class="math display"><em>r</em><sub><em>o</em><em>u</em><em>t</em></sub> = <em>r</em><sub><em>d</em><em>s</em></sub></span></td>
+</tr>
+<tr class="odd">
+<td>Best analyzed with T model of transistor (see CJM page 31)</td>
+</tr>
+<tr class="even">
+<td><img src="/aic2023/assets/df_ls_a.png" /></td>
+</tr>
+</tbody>
+</table>
+<h2 id="diff-pairs-are-cool">Diff pairs are cool</h2>
+<p><img src="/aic2023/assets/df_ls_a.png" /></p>
+<p>Can choose between</p>
+<p><span
+class="math display"><em>v</em><sub><em>o</em></sub> = <em>g</em><sub><em>m</em></sub><em>r</em><sub><em>d</em><em>s</em></sub><em>v</em><sub><em>i</em></sub></span></p>
+<p>and</p>
+<p><span
+class="math display"><em>v</em><sub><em>o</em></sub> =  − <em>g</em><sub><em>m</em></sub><em>r</em><sub><em>d</em><em>s</em></sub><em>v</em><sub><em>i</em></sub></span></p>
+<p>by flipping input (or output) connections</p>
+</div>
+<div class="slide section level1">
+
+<p><img src="/aic2023/assets/diff.png" /></p>
+</div>
+<div class="slide section level1">
+
+<h2 id="thanks">Thanks!</h2>
+</div>
+<div class="slide section level1">
+
+</div>
+</body>
+</html>

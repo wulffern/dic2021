@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>lectures/l6_project</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">lectures/l6_project</h1>
+</div>
+<div class="slide section level1">
+
+<h2 id="tfe4152---lecture-6">TFE4152 - Lecture 6</h2>
+<h2 id="project">Project</h2>
+<h2 id="source"><a
+href="https://github.com/wulffern/dic2021/blob/main/lectures/l6_project.md">Source</a></h2>
+</div>
+<div class="slide section level1">
+
+<h2 id="goal-for-today">Goal for today</h2>
+<p>Make it easier to understand the project</p>
+</div>
+<div class="slide section level1">
+
+<h2 id="project-1">Project</h2>
+</div>
+<div class="slide section level1">
+
+<ul>
+<li>30 % of final grade</li>
+<li>Groups of 2 people. Find a partner soon. Sign up on blackboard.</li>
+<li>Deadline: 19’th November before 12:00 (24 hour format).</li>
+<li>Strict deadline, <span
+class="math display"><em>t</em> &gt; 12 : 00 ≡ <em>f</em><em>a</em><em>i</em><em>l</em></span>.
+Both members in group must submit report.</li>
+</ul>
+</div>
+<div class="slide section level1">
+
+<h2 id="goal">Goal</h2>
+<p>Be inspired by the ISSCC paper, and design a similar system.</p>
+<p>Design analog circuits in SPICE</p>
+<p>Design digital circuits in SystemVerilog</p>
+</div>
+<div class="slide section level1">
+
+<h2 id="a-10-000-framess-cmos-digital-pixel-sensor"><a
+href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=972156">A
+10 000 Frames/s CMOS Digital Pixel Sensor</a></h2>
+<p><img src="/aic2023/assets/isscc.png" /></p>
+</div>
+<div class="slide section level1">
+
+<blockquote>
+<p>image ../ip/idea.png removed photon sensor <span
+class="math display">⇒</span> local analog to digital converter <span
+class="math display">⇒</span> local memory</p>
+</blockquote>
+</div>
+<div class="slide section level1">
+
+<h2 id="image-..ipconcept.png-removed">&gt; image ../ip/concept.png
+removed</h2>
+<h2 id="image-..ipblock_diagram.pdf-removed">&gt; image
+../ip/block_diagram.pdf removed</h2>
+<blockquote>
+<p>image ../ip/block_diagram_modified.pdf removed</p>
+</blockquote>
+</div>
+<div class="slide section level1">
+
+<h2 id="image-..ippixelsensor.png-removed">&gt; image
+../ip/pixelSensor.png removed</h2>
+<blockquote>
+<p>image ../ip/sensor.png removed ## SENSOR</p>
+</blockquote>
+</div>
+<div class="slide section level1">
+
+<p><img src="/aic2023/assets/photogate.png" /></p>
+</div>
+<div class="slide section level1">
+
+<h2 id="comp">COMP</h2>
+<blockquote>
+<p>image ../ip/comparator.png removed</p>
+</blockquote>
+</div>
+<div class="slide section level1">
+
+<blockquote>
+<p>image ../ip/memory.png removed ## MEMORY</p>
+</blockquote>
+</div>
+<div class="slide section level1">
+
+<h2 id="image-..ipoptions.png-removed">&gt; image ../ip/options.png
+removed</h2>
+<h2 id="image-..iptiming_diagram.png-removed">&gt; image
+../ip/timing_diagram.png removed</h2>
+<h2 id="minimum-implementation">Minimum implementation</h2>
+<ul>
+<li>Model of 2 x 2 pixel array in SystemVerilog</li>
+<li>State machine to control reset, exposure, analog-to-digital
+conversion, and readout of the pixel array</li>
+<li>SPICE of pixel sensor (sensor, comparator)</li>
+<li>Report documenting that the circuits (analog and digital) work as
+designed</li>
+</ul>
+</div>
+<div class="slide section level1">
+
+<h2 id="things-its-ok-to-ignore">Things it’s OK to ignore</h2>
+<ul>
+<li>Transistor corners</li>
+<li>Gray counter (but if you do, then it will be hard to get the ADC
+accurate)</li>
+<li>Voltage variation</li>
+<li>Temperature variation</li>
+<li>“nice to have features”, like power optimalization, testability</li>
+</ul>
+</div>
+<div class="slide section level1">
+
+<h2 id="gray-codes"><a
+href="https://en.wikipedia.org/wiki/Gray_code">Gray codes</a></h2>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Decimal</th>
+<th align="center">Binary</th>
+<th align="center">Gray</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">0</td>
+<td align="center">000</td>
+<td align="center">000</td>
+</tr>
+<tr class="even">
+<td align="center">1</td>
+<td align="center">001</td>
+<td align="center">001</td>
+</tr>
+<tr class="odd">
+<td align="center">2</td>
+<td align="center">010</td>
+<td align="center">011</td>
+</tr>
+<tr class="even">
+<td align="center">3</td>
+<td align="center">011</td>
+<td align="center">010</td>
+</tr>
+<tr class="odd">
+<td align="center">4</td>
+<td align="center">100</td>
+<td align="center">110</td>
+</tr>
+<tr class="even">
+<td align="center">5</td>
+<td align="center">101</td>
+<td align="center">111</td>
+</tr>
+<tr class="odd">
+<td align="center">6</td>
+<td align="center">110</td>
+<td align="center">101</td>
+</tr>
+<tr class="even">
+<td align="center">7</td>
+<td align="center">111</td>
+<td align="center">100</td>
+</tr>
+</tbody>
+</table>
+<p>dicex/sim/verilog/graycounter.v</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode verilog"><code class="sourceCode verilog"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">module</span> graycounter<span class="op">(</span>out<span class="op">,</span> clk<span class="op">,</span> reset<span class="op">);</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>   <span class="dt">parameter</span> WIDTH <span class="op">=</span> <span class="dv">8</span><span class="op">;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>   <span class="dt">output</span> <span class="op">[</span>WIDTH<span class="dv">-1</span> <span class="op">:</span> <span class="dv">0</span><span class="op">]</span> out<span class="op">;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>   <span class="dt">input</span>                clk<span class="op">,</span> reset<span class="op">;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>   logic <span class="op">[</span>WIDTH<span class="dv">-1</span> <span class="op">:</span> <span class="dv">0</span><span class="op">]</span>  out<span class="op">;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>   <span class="dt">wire</span>                 clk<span class="op">,</span> reset<span class="op">;</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>   logic <span class="op">[</span>WIDTH<span class="dv">-1</span> <span class="op">:</span> <span class="dv">0</span><span class="op">]</span>  q<span class="op">;</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>   <span class="kw">always</span> <span class="op">@(</span><span class="kw">posedge</span> clk <span class="dt">or</span> <span class="kw">posedge</span> reset<span class="op">)</span> <span class="kw">begin</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>      <span class="kw">if</span> <span class="op">(</span>reset<span class="op">)</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        q <span class="op">&lt;=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>      <span class="kw">else</span> <span class="kw">begin</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>         q <span class="op">&lt;=</span> q <span class="op">+</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>      <span class="kw">end</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>      out <span class="op">&lt;=</span> <span class="op">{</span>q<span class="op">[</span>WIDTH<span class="dv">-1</span><span class="op">],</span> q<span class="op">[</span>WIDTH<span class="dv">-1</span><span class="op">:</span><span class="dv">1</span><span class="op">]</span> <span class="op">^</span> q<span class="op">[</span>WIDTH<span class="dv">-2</span><span class="op">:</span><span class="dv">0</span><span class="op">]};</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>   <span class="kw">end</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="kw">endmodule</span> <span class="co">// graycounter</span></span></code></pre></div>
+</div>
+<div class="slide section level1">
+
+<p><img src="/aic2023/assets/graycounter.png" /> <img
+src="/aic2023/assets/counter.png" /></p>
+</div>
+<div class="slide section level1">
+
+<p><img src="/aic2023/assets/sensor.png" /></p>
+</div>
+<div class="slide section level1">
+
+<h2 id="analog-simulators">Analog Simulators</h2>
+<p>aimspice, ngspice, spectre, eldo, hspice</p>
+<p>Time evolution (transient analysis) is a numerical analysis to
+differential equations for voltage and current. For example <a
+href="https://en.wikipedia.org/wiki/Newton%27s_method">Newton’s
+method</a></p>
+<ol style="list-style-type: decimal">
+<li>Take a small time step, iterate numerical analysis until error is
+low enough, if error is too large, chose shorter time step</li>
+<li>Go to 1</li>
+</ol>
+<p>For more info, see <a
+href="https://www.emcs.org/acstrial/newsletters/summer09/HowSpiceWorks.pdf">In
+a Nutshell: How SPICE Works</a></p>
+<p>Can simulate digital circuits, but very slowly</p>
+<h2 id="digital-simulators">Digital Simulators</h2>
+<p>iverilog, questa, xcelium, vcs</p>
+<p>Time evolution with time steps, and delta-time</p>
+<ol style="list-style-type: decimal">
+<li>Next time step (i.e clock cycle)</li>
+<li>What signals change at this time step?</li>
+<li>Compute new signal values, and schedule changes in future</li>
+<li>Should any of the signals that changed now affect other signals now?
+If yes, then take delta time step</li>
+<li>If delta timestep, then go to 2. If no more delta timestep, go to
+1.</li>
+</ol>
+<p><strong>Cannot simulate analog differential equations!</strong></p>
+</div>
+<div class="slide section level1">
+
+<h2 id="mixed-signal-simulators">Mixed-Signal Simulators</h2>
+<p>Control time in both analog and digital simulator</p>
+<p>Provide analog-to-digital and digital-to-analog converters to
+“mirror” signals in the other simulator</p>
+<p>Not sure there is an open source mixed-signal simulator</p>
+<p><img src="/aic2023/assets/mixedsims.png" /></p>
+</div>
+<div class="slide section level1">
+
+<h2 id="what-you-get">What you get</h2>
+<p><a
+href="https://github.com/wulffern/dicex">github.com/wulffern/dicex</a></p>
+<pre><code>project/
+├── spice/
+│   ├── Makefile                # See https://www.gnu.org/software/make/manual/html_node/Introduction.html
+│   ├── pixelSensor.cir         # Almost empty circuit for pixelSensor
+│   └── pixelSensor_tb.cir      # SPICE testbench for pixelSensor, emulates verilog
+└── verilog/
+    ├── Makefile                
+    ├── pixelSensor.fl          # Verilog file list
+    ├── pixelSensor_tb.gtkw     # Save file for GTKWave
+    ├── pixelSensor_tb.v        # Verilog testbench for pixelSensor
+    └── pixelSensor.v           # Verilog model of analog pixelSensor circuit</code></pre>
+</div>
+<div class="slide section level1">
+
+<h2 id="what-you-should-do">What you should do</h2>
+</div>
+<div class="slide section level1">
+
+<h2 id="model-of-2-x-2-pixel-array-in-systemverilog">Model of 2 x 2
+pixel array in SystemVerilog</h2>
+<p>Make a SystemVerilg module (i.e <code>pixelArray.v</code>), that use
+<code>pixelSensor.v</code></p>
+<p>Figure out which signals need to be a bus, and what signals are
+common for the pixels</p>
+<p>Make a testbench <code>pixelArray_tb.v</code> to check that the
+<code>pixelArray.v</code> compiles and do some rudementary tests to
+check that you’ve hooked things up correctly</p>
+<table style="width:6%;">
+<colgroup>
+<col width="5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>## State machine</td>
+</tr>
+<tr class="even">
+<td>Make a SystemVerilog module <code>pixelState.v</code> that can
+connect to <code>pixelArray.v</code></td>
+</tr>
+<tr class="odd">
+<td>Make a state machine to control reset, exposure, analog-to-digital
+conversion, and readout of the pixel array</td>
+</tr>
+<tr class="even">
+<td>Make a testbench <code>pixelState_tb.v</code> to test the state
+machine</td>
+</tr>
+</tbody>
+</table>
+<h2 id="top-verilog">Top verilog</h2>
+<p>Make a SystemVerilog module <code>pixelTop.v</code> that connects
+<code>pixelState.v</code> to <code>pixelArray.v</code></p>
+<p>Make a testbench <code>pixelTop_tb.v</code> to test the statemachine
+and readout of the 2 x 2 array</p>
+<table style="width:6%;">
+<colgroup>
+<col width="5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>## SPICE of pixel sensor</td>
+</tr>
+<tr class="even">
+<td>Copy <code>pixelSensor.cir</code> to another name</td>
+</tr>
+<tr class="odd">
+<td>Copy <code>pixelSensor_tb.cir</code> to another name</td>
+</tr>
+<tr class="even">
+<td>Make the design from the paper (Fig. 4) - Sensor (SENSOR) -
+Comparator (COMP) - Memory (MEMORY)</td>
+</tr>
+<tr class="odd">
+<td>Add something (like <code>Rphoto</code> in
+<code>pixelSensor.tb</code>) to model the photocurrent.</td>
+</tr>
+<tr class="even">
+<td>Add a testbench for each subcircuit (COMP, SENSOR, MEMCELL,
+MEMORY)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="report-12">Report 1/2</h2>
+<ul>
+<li><strong>Introduction</strong> = Why?</li>
+<li><strong>Theory</strong> = How?
+<ul>
+<li>As little information as possible. Give references to sources.
+Assume that the reader has read the paper.</li>
+</ul></li>
+<li><strong>Implementation</strong> = What?
+<ul>
+<li>Describe what you designed</li>
+<li>State diagrams, with explanation</li>
+<li>Circuit diagrams, with explanation</li>
+<li>One sub-chapter per block</li>
+</ul></li>
+</ul>
+</div>
+<div class="slide section level1">
+
+<h2 id="report-22">Report 2/2</h2>
+<ul>
+<li><strong>Verification</strong> = Are you sure it works?
+<ul>
+<li>Describe your testbenches, and how you verified your design</li>
+<li>Describe key results</li>
+<li>Describe known problems (incase something does not work)</li>
+</ul></li>
+<li><strong>Discussion and conclusion</strong> = Why do you deserve a
+good grade?</li>
+<li><strong>Appendix</strong>
+<ul>
+<li>SPICE netlist</li>
+<li>SystemVerilog netlists</li>
+<li>SystemVerilog testbenches</li>
+</ul></li>
+</ul>
+</div>
+<div class="slide section level1">
+
+<h2 id="proposed-plan">Proposed plan</h2>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Week</th>
+<th align="left">Plan</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">34</td>
+<td align="left">Register group</td>
+</tr>
+<tr class="even">
+<td align="center">35</td>
+<td align="left">Read and understand paper</td>
+</tr>
+<tr class="odd">
+<td align="center">36</td>
+<td align="left">Sketch what you want to do</td>
+</tr>
+<tr class="even">
+<td align="center">37</td>
+<td align="left">Write theory chapter in report</td>
+</tr>
+<tr class="odd">
+<td align="center">38</td>
+<td align="left">Design &amp; simulation</td>
+</tr>
+<tr class="even">
+<td align="center">39</td>
+<td align="left">Design &amp; simulation</td>
+</tr>
+<tr class="odd">
+<td align="center">40</td>
+<td align="left">Design &amp; simulation</td>
+</tr>
+<tr class="even">
+<td align="center">41</td>
+<td align="left">Design &amp; simulation</td>
+</tr>
+<tr class="odd">
+<td align="center">42</td>
+<td align="left">Verification</td>
+</tr>
+<tr class="even">
+<td align="center">43</td>
+<td align="left">Verification</td>
+</tr>
+<tr class="odd">
+<td align="center">44</td>
+<td align="left">Write report</td>
+</tr>
+<tr class="even">
+<td align="center">45</td>
+<td align="left">Write report</td>
+</tr>
+<tr class="odd">
+<td align="center">46</td>
+<td align="left"><strong>Deadline</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="slide section level1">
+
+<h2 id="what-you-get-1">What you get</h2>
+<p><a
+href="https://github.com/wulffern/dicex">github.com/wulffern/dicex</a></p>
+<pre><code>project/
+├── spice/
+│   ├── Makefile                # See https://www.gnu.org/software/make/manual/html_node/Introduction.html
+│   ├── pixelSensor.cir         # Almost empty circuit for pixelSensor
+│   └── pixelSensor_tb.cir      # SPICE testbench for pixelSensor, emulates verilog
+└── verilog/
+    ├── Makefile                
+    ├── pixelSensor.fl          # Verilog file list
+    ├── pixelSensor_tb.gtkw     # Save file for GTKWave
+    ├── pixelSensor_tb.v        # Verilog testbench for pixelSensor
+    └── pixelSensor.v           # Verilog model of analog pixelSensor circuit</code></pre>
+<p>Let’s check what’s inside the files</p>
+</div>
+<div class="slide section level1">
+
+<h2 id="thanks">Thanks!</h2>
+</div>
+<div class="slide section level1">
+
+</div>
+</body>
+</html>
