@@ -1,3 +1,5 @@
+../media/maze.gif
+../media/maze.gif
 ../media/l10/nagel.png
 ../media/l10/nagel.png
 ../media/l10/assembler.png

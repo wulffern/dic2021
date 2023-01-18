@@ -41,11 +41,38 @@ header:  Helvetica
 
 ---
 
+# Want to make your own IC?
+
+[https://efabless.com/](https://efabless.com/)
+
+[https://github.com/google/skywater-pdk](https://github.com/google/skywater-pdk)
+
+[https://skywater-pdk.readthedocs.io/en/latest/index.html](https://skywater-pdk.readthedocs.io/en/latest/index.html)
+
+---
+
+**Honesty:** Making integrated circuits is an expensive endeavor. As humans, we will always make mistakes, or fail to imagine how things will fail. The cost of failures increases exponentially the closer we are to a volume product. As such, finding mistakes early is necessary to reduce cost. If people are honest, and acknowledge immediately that something has gone wrong, that can give us time to fix the problem before it costs millions.
+
+**Responsibility:** Time to market is essential in integrated circuits. We must meet the market window for a particular product. Complex projects will be broken down into pieces, and milestones. We require those milestones to be met, as such, we need people that take responsibility, and ensure that milestones are met. If their milestone depends on a delivery from someone else, they need to follow up, and help to ensure that the overall milestones are met.
+
+**Logical thinking:** When things go wrong, we need people that will dig into the problem and find the real physical root cause. There is no place for “hand-wavy” arguments, or arguments from authority “I know everything, so you should listen to me”. We deal with physics, and in integrated circuits, how something fails always have a physical reason.
+
+**Humility:** Realizing that humans are fallible, but we should strive for not doing the same mistake twice.
+
+**Diversity:** An employee’s brain must have the right skills and the right qualities. We strive for diversity, free from discrimination due to gender, nationality, origin, and religion.
+
+**Ability to learn:** As an engineer you’re never finished learning. Integrated circuits is a deep skill, and you will need the ability to learn new things.
+
+**Curiosity:** We want engineers that like to understand how things work. There should be an inherent drive to figure things out.
+
+**Be fearless:** Don’t be afraid of asking questions. Be forward leaning. Act. Champion your ideas.
+
+---
 #[fit] +
 
 ---
 
-# Together with a partner, figure out the logic circuit for the sum of two 1-bit signals, A + B, with the sum as a 1-bit output (S) and a 1-bit carry (C) 
+# Together with a partner (or alone), figure out the logic circuit for the sum of two 1-bit signals, A + B, with the sum as a 1-bit output (S) and a 1-bit carry (C) 
 
 ---
 ### Half adder
@@ -55,7 +82,7 @@ header:  Helvetica
 
 ---
 
-# Together with a partner, figure out the logic circuit for the sum of **three 1-bit signals, A, B, and carry input (Ci)** with the sum as a 1-bit output (S) and a 1-bit carry (C) 
+# Together with a partner (or alone), figure out the logic circuit for the sum of **three 1-bit signals, A, B, and carry input (Ci)** with the sum as a 1-bit output (S) and a 1-bit carry (C) 
 
 ---
 
