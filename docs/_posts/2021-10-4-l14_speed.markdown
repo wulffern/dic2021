@@ -75,19 +75,19 @@ endmodule // counter
 ##  Why
 
 
-![](/dic2021/assets/cpumax.png)
+![](/dic2021/assets/cpumax.svg)
 
 
 ![](/dic2021/assets/dig_des.png)
 
 
-![](/dic2021/assets/digital_ff_comb.png)
+![](/dic2021/assets/digital_ff_comb.svg)
 
 
 # Flip-flops and speed
 
 
-![](/dic2021/assets/d_ff.png)
+![](/dic2021/assets/d_ff.svg)
 
 
 
@@ -110,14 +110,14 @@ XA8 QN Q AVDD AVSS IVX1_CV
 
 ### Setup time: How long before clk does the data need to change
 
-![](/dic2021/assets/dff_setup_8.png)
+![](/dic2021/assets/dff_setup_8.svg)
 
 ### Hold time: How long after clk can the data change
 
-![](/dic2021/assets/dff_hold_-40.png)
+![](/dic2021/assets/dff_hold_-40.svg)
 
 
-![](/dic2021/assets/digital_ff_comb.png)
+![](/dic2021/assets/digital_ff_comb.svg)
 
 
 
@@ -141,7 +141,7 @@ Negative slack (over PVT[^1]) $$\Rightarrow$$ Timing is not OK
 [^1]: PVT $$\Rightarrow$$ Process, Voltage, Temperature
 
 
-![](/dic2021/assets/timing.png)
+![](/dic2021/assets/timing.svg)
 
 
 # Timing analysis tools 
@@ -428,7 +428,7 @@ Real delay $$\Rightarrow d = 5\frac{2}{3} \times 3 \text{ ps} = 17 \text{ ps}$$
 
 
 
-![](/dic2021/assets/fig_logeffort.png)
+![](/dic2021/assets/fig_logeffort.svg)
 
 
 
@@ -443,13 +443,13 @@ Real delay $$\Rightarrow d = 5\frac{2}{3} \times 3 \text{ ps} = 17 \text{ ps}$$
 
 ##  Which has shortest delay?
 
-![](/dic2021/assets/path.png)
+![](/dic2021/assets/path.svg)
 
 
 
 
-![](/dic2021/assets/path.png)
-![](/dic2021/assets/fig_logeffort.png)
+![](/dic2021/assets/path.svg)
+![](/dic2021/assets/fig_logeffort.svg)
 
 
 
@@ -477,10 +477,10 @@ $$D_F = 12, p = 3 \Rightarrow D = 12 + 3 = 15$$
 
 ##  Trends
 
-![](/dic2021/assets/rosc_vdd.png)
+![](/dic2021/assets/rosc_vdd.svg)
 
 
-![](/dic2021/assets/rosc_temp.png)
+![](/dic2021/assets/rosc_temp.svg)
 
 
 ##  Attack vector
@@ -582,7 +582,7 @@ V15 count_2 34 DC 0
 
 ```
 
-![](/dic2021/assets/counter_ref_do.png)
+![](/dic2021/assets/counter_ref_do.svg)
 
 
 dicex/sim/verilog/counter\_sv/counter\_attack\_tb.cir
@@ -591,10 +591,10 @@ dicex/sim/verilog/counter\_sv/counter\_attack\_tb.cir
 VDDA AVDD_ATTACK 0 dc 0.5 pulse(1.5 0.6 tcd trf trf tapw taper)
 ```
 
-![](/dic2021/assets/counter_ref_wave.png)
+![](/dic2021/assets/counter_ref_wave.svg)
 
 
-![](/dic2021/assets/counter_ref_dor.png)
+![](/dic2021/assets/counter_ref_dor.svg)
 
 
 ![](/dic2021/assets/chipwisperer.png)

@@ -372,7 +372,7 @@ nRF51, nRF52, nRF53 series devices from Nordic Semiconductor are all the same ty
 
 
 
-![](/dic2021/assets/qfn48.png)
+![](/dic2021/assets/qfn48.svg)
 
 
 ![](/dic2021/assets/nrf5340.png)

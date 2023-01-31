@@ -191,7 +191,7 @@ Seems like the highest known band gap is about 13.5 eV (Lithium Fluoride)
 <sub><sub>Online, https://i1.wp.com/semiengineering.com/wp-content/uploads/2016/11/Screen-Shot-2016-11-15-at-4.04.00-PM.png?w=953&ssl=1</sub></sub>
 
 
-![](/dic2021/assets/euv_litho.png)
+![](/dic2021/assets/euv_litho.svg)
 
 
 
@@ -237,7 +237,7 @@ Seems like the highest known band gap is about 13.5 eV (Lithium Fluoride)
 ##  What
 
 
-![](/dic2021/assets/river_mpw1.png)
+![](/dic2021/assets/river_mpw1.svg)
 
 
 ![](/dic2021/assets/klayout.png)

@@ -42,7 +42,7 @@ math: true
 
 ##  Pick two
 
-![](/dic2021/assets/optimization.png)
+![](/dic2021/assets/optimization.svg)
 
 
 ##  Power
@@ -140,13 +140,13 @@ Random data $$P = 0.5$$, $$\alpha = 0.25$$
 
 Clocks $$\alpha = 1$$
 
-![](/dic2021/assets/tb_sw_prob.png)
+![](/dic2021/assets/tb_sw_prob.svg)
 
 
 
-![](/dic2021/assets/tb_sw_prob.png)
+![](/dic2021/assets/tb_sw_prob.svg)
 
-![](/dic2021/assets/prob.png)
+![](/dic2021/assets/prob.svg)
 
 
 
@@ -165,9 +165,9 @@ Clocks $$\alpha = 1$$
 
 
 
-![](/dic2021/assets/tb_sw_prob.png)
+![](/dic2021/assets/tb_sw_prob.svg)
 
-![](/dic2021/assets/prob.png)
+![](/dic2021/assets/prob.svg)
 
 
 
@@ -192,12 +192,12 @@ Use *De Morgan* first  $$\overline{A+B}  = \overline{A} \cdot \overline{B}$$
 1. Turn off $$V_{DD}$$
 1. Reduce $$V_{DD}$$
 
-![](/dic2021/assets/digital_ff_comb.png)
+![](/dic2021/assets/digital_ff_comb.svg)
 
 
 ## Stop clock[^1]
 
-![](/dic2021/assets/stop_clock.png)
+![](/dic2021/assets/stop_clock.svg)
 
 
 [^1]: Often called *clock gating*
@@ -205,21 +205,21 @@ Use *De Morgan* first  $$\overline{A+B}  = \overline{A} \cdot \overline{B}$$
 
 ## Stop activity
 
-![](/dic2021/assets/logic.png)
+![](/dic2021/assets/logic.svg)
 
 ## Reduce frequency
-![](/dic2021/assets/reduce_freq.png)
+![](/dic2021/assets/reduce_freq.svg)
 
 ## Turn off power supply [^2]
 
-![](/dic2021/assets/powergate.png)
+![](/dic2021/assets/powergate.svg)
 
 [^2]: Often called power gating
 
 
 ### Reduce power supply ($$V_{DD}$$) 
 
-![](/dic2021/assets/reduce_vdd.png)
+![](/dic2021/assets/reduce_vdd.svg)
 
 ### Energy-Delay Product
 
@@ -359,7 +359,7 @@ Use Elmore (Lecture 14)
  $$t_{pd} = R_{inv}\frac{C_{wire}}{2} + (R_{wire} + R_{inv}) \left(\frac{C_{wire}}{2} + C_{inv}\right) $$
  $$= 1k \times 100f + (1k + 0.1 \times 1k/0.1)\times 101f = 0.3\text{ ns}$$ 
 
-![](/dic2021/assets/wire_delay.png)
+![](/dic2021/assets/wire_delay.svg)
 
 # Crosstalk
 
@@ -372,7 +372,7 @@ An aggressor (0-1, 1-0) injects charge into neighbor wire
 **Noise on nonswitching wires**
 
 
-![](/dic2021/assets/crosstalk.png)
+![](/dic2021/assets/crosstalk.svg)
 
 
 ##  Demo of Layout

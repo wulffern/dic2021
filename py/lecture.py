@@ -20,17 +20,12 @@ class Image():
 
 
         if(not self.skip and ".pdf" in self.src):
-            png = self.src.replace(".pdf",".png")
-
-            if(os.path.exists(os.path.join(self.directory,png))):
-                self.src = png
-            else:
-            #if(True):
-                if platform == "linux" or platform == "linux2":
-                    os.system(f"cd {self.directory};gs -dSAFER -r600 -sDEVICE=pngalpha -o {png} {self.src}")
-                elif platform == "darwin":
-                    os.system(f"cd {self.directory};sips -s format png {self.src} --resampleHeightWidthMax 800 --out {png}")
-                self.src = png
+            #- I've changed to svg, hopefully better images
+            svg = self.src.replace(".pdf",".svg")
+            if(not os.path.exists(os.path.join(self.directory,svg))):
+                cmd = f"cd {self.directory}; pdftocairo -svg {self.src} {svg}"
+                os.system(cmd)
+            self.src = svg
 
         self.filesrc = os.path.basename(self.src)
         self.dirsrc  = os.path.dirname(self.src)

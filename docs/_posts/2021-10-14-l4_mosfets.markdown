@@ -36,16 +36,16 @@ math: true
 
 NMOS conduct for positive gate-to-source voltage
 
-![](/dic2021/assets/fig_nmos.png)
+![](/dic2021/assets/fig_nmos.svg)
 
 
 
 PMOS conduct for negative gate-to-source voltage
 
-![](/dic2021/assets/fig_pmos.png)
+![](/dic2021/assets/fig_pmos.svg)
 
 
-![](/dic2021/assets/3dcross.png)
+![](/dic2021/assets/3dcross.svg)
 
 
 # Drain Source Current ($$I_{DS}$$)
@@ -56,7 +56,7 @@ PMOS conduct for negative gate-to-source voltage
 
 ## $$I_{DS} = f(V_{GS},V_{DS},...)$$
 
-![](/dic2021/assets/large_signal.png)
+![](/dic2021/assets/large_signal.svg)
 
 
 ##  Gate Source Voltage ($$V_{GS}$$)
@@ -124,7 +124,7 @@ M1   D   G   S   B  nmos   w=1.08u    l=0.6u
 
 $$i(vcur) = I_{DS} $$
 
-![](/dic2021/assets/vgate.png)
+![](/dic2021/assets/vgate.svg)
 
 # Inversion level
 
@@ -136,7 +136,7 @@ Define $$ V_{eff} \equiv V_{GS} - V_{tn} $$, where $$V_{tn}$$ is the "threshold 
 |  0    | moderate inversion |
 | > 100 mV | strong inversion| 
 
-![](/dic2021/assets/vgate.png)
+![](/dic2021/assets/vgate.svg)
 
 
 # Weak inversion
@@ -151,7 +151,7 @@ $$
 n \approx 1.5
 $$
 
-![](/dic2021/assets/vgate.png)
+![](/dic2021/assets/vgate.svg)
 
 # Moderate inversion
 
@@ -159,7 +159,7 @@ Stay away from moderate inversion for analog design.
 
 If you can't, then trust the model
 
-![](/dic2021/assets/vgate.png)
+![](/dic2021/assets/vgate.svg)
 
 
 # Strong inversion
@@ -175,20 +175,20 @@ V_{eff} V_{DS} - V_{DS}^2/2
 \end{cases}
 $$
 
-![](/dic2021/assets/vgate.png)
+![](/dic2021/assets/vgate.svg)
 
 
-![](/dic2021/assets/accumulated.png)
+![](/dic2021/assets/accumulated.svg)
 
 
 
-![](/dic2021/assets/depleted.png)
+![](/dic2021/assets/depleted.svg)
 
 
-![](/dic2021/assets/weakinv.png)
+![](/dic2021/assets/weakinv.svg)
 
 
-![](/dic2021/assets/inversion.png)
+![](/dic2021/assets/inversion.svg)
 
 
 # The threshold voltage ($$ V_{tn} $$) is defined as $$ p_p = n_{ch} $$ 
@@ -198,7 +198,7 @@ $$
 
 # $$C_{GS} \text{ for }  V_{DS} = 0, V_{S} = 0 $$ 
 
-![](/dic2021/assets/vgatec.png)
+![](/dic2021/assets/vgatec.svg)
 
 In strong inversion
 
@@ -233,7 +233,7 @@ $$
 
 $$i(vcur) = I_{DS} $$
 
-![](/dic2021/assets/vdrain.png)
+![](/dic2021/assets/vdrain.svg)
 
 
 # Strong inversion
@@ -249,36 +249,36 @@ V_{eff} V_{DS} - V_{DS}^2/2
 \end{cases}
 $$
 
-![](/dic2021/assets/vdrain.png)
+![](/dic2021/assets/vdrain.svg)
 
 
-![](/dic2021/assets/vds_l_veff.png)
+![](/dic2021/assets/vds_l_veff.svg)
 
 
-![](/dic2021/assets/vds_veff.png)
+![](/dic2021/assets/vds_veff.svg)
 
 
-![](/dic2021/assets/vds_h_veff.png)
+![](/dic2021/assets/vds_h_veff.svg)
 
 
-![](/dic2021/assets/drain_close.png)
+![](/dic2021/assets/drain_close.svg)
 
 
-![](/dic2021/assets/strong_deriv.png)
+![](/dic2021/assets/strong_deriv.svg)
 
 
 ##  Head simulation
 
-![](/dic2021/assets/l4_ex1.png)
+![](/dic2021/assets/l4_ex1.svg)
 
-![](/dic2021/assets/vgate.png)
+![](/dic2021/assets/vgate.svg)
 
 
 
 ##  Channel length modulation
 
 
-![](/dic2021/assets/drain_close.png)
+![](/dic2021/assets/drain_close.svg)
 
 
 $$

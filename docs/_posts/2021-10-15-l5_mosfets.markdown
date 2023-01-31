@@ -64,7 +64,7 @@ math: true
 ## $$ g_{ds} = \frac{1}{r_{ds}}  = \frac{\partial I_{DS}}{\partial V_{DS}}\ $$
 
 
-![](/dic2021/assets/small_signal.png)
+![](/dic2021/assets/small_signal.svg)
 
 ## Transconductance ($$ g_m $$)
 
@@ -98,7 +98,7 @@ Define intrinsic gain as
 
  $$ A  =  \frac{2 I_D}{V_{eff}} \times \frac{1}{ \lambda I_D } = \frac{2}{\lambda V_{eff}}  $$
 
-![](/dic2021/assets/vgaini.png)
+![](/dic2021/assets/vgaini.svg)
 
 
 
@@ -118,10 +118,10 @@ Define intrinsic gain as
 | V<sub>S</sub> | 0 |
 | V<sub>B</sub> | -1.0 to 0.3 |
 
-![](/dic2021/assets/vbulk.png)
+![](/dic2021/assets/vbulk.svg)
 
 
-![](/dic2021/assets/bulk.png)
+![](/dic2021/assets/bulk.svg)
 
 
 
@@ -141,23 +141,23 @@ $$ V_{SB} > 0, V_{tn} > V_{tn0}$$
 $$ V_{SB} < 0, V_{tn} < V_{tn0}$$
 
 
-![](/dic2021/assets/bulk_fw_bulk.png)
+![](/dic2021/assets/bulk_fw_bulk.svg)
 
 
-![](/dic2021/assets/bulk_fw.png)
+![](/dic2021/assets/bulk_fw.svg)
 
 
-![](/dic2021/assets/small_signal_w_gs.png)
+![](/dic2021/assets/small_signal_w_gs.svg)
 
 
 ##  High frequency model
 
 
 
-![](/dic2021/assets/hfmodel.png)
+![](/dic2021/assets/hfmodel.svg)
 
 
-![](/dic2021/assets/caps.png)
+![](/dic2021/assets/caps.svg)
 
 # $$C_{gs} $$ and $$C_{gd}$$
 
@@ -213,7 +213,7 @@ If $$ Y(s) = 1/sC $$ then
 
 
 
-![](/dic2021/assets/miller.png)
+![](/dic2021/assets/miller.svg)
 
 
 ##  Weak inversion 
@@ -230,7 +230,7 @@ If $$ V_{eff} < 0 $$ diffusion currents dominate.
 
  $$ g_m = \frac{I_D}{nV_T} $$
 
-![](/dic2021/assets/weakinv.png)
+![](/dic2021/assets/weakinv.svg)
 
 # $$ g_m/I_D $$ <sub> or "bang for the buck" </sub>
 
@@ -242,7 +242,7 @@ If $$ V_{eff} < 0 $$ diffusion currents dominate.
  
  $$ \frac{g_m}{I_D} = \frac{2}{V_{eff}}$$ 
 
-![](/dic2021/assets/vgmid.png)
+![](/dic2021/assets/vgmid.svg)
 
 
 ##  Velocity saturation
@@ -260,7 +260,7 @@ Electron speed limit in silicon
  
 
  
-![](/dic2021/assets/l5_velocity.png)
+![](/dic2021/assets/l5_velocity.svg)
 
 
 
@@ -338,7 +338,7 @@ In intrinsic silicon:
  **Doping ($$N_A \text{or} N_D$$) reduces $$\mu $$** 
 
 
-![](/dic2021/assets/fig_inv.png)
+![](/dic2021/assets/fig_inv.svg)
 
 ## Assume we want same current in strong inversion and active region 
 
@@ -359,20 +359,20 @@ In intrinsic silicon:
 [https://ieeexplore.ieee.org/document/5247174](https://ieeexplore.ieee.org/document/5247174 )
 
 
-![](/dic2021/assets/aicdn.png)
+![](/dic2021/assets/aicdn.svg)
 
 
 ##  Drain induced barrier lowering (DIBL)
 
 
-![](/dic2021/assets/dibl.png)
+![](/dic2021/assets/dibl.svg)
 
 
 
 ##  Well Proximity Effect (WPE)
 
 
-![](/dic2021/assets/wpe.png)
+![](/dic2021/assets/wpe.svg)
 
 
 
@@ -387,14 +387,14 @@ In intrinsic silicon:
 
 ## What can change stress?
 
-![](/dic2021/assets/stress.png)
+![](/dic2021/assets/stress.svg)
 
 
 
 ##  Gate current
 
 
-![](/dic2021/assets/gateleakage.png)
+![](/dic2021/assets/gateleakage.svg)
 
 
 ![](https://patentimages.storage.googleapis.com/9d/08/77/b6842f1e219aba/imgf0001.png)
@@ -402,13 +402,13 @@ In intrinsic silicon:
 ##  Hot carrier injection
 
 
-![](/dic2021/assets/hci.png)
+![](/dic2021/assets/hci.svg)
 
 
 ##  Channel initiated secondary-electron (CHISEL)
 
 
-![](/dic2021/assets/chisel.png)
+![](/dic2021/assets/chisel.svg)
 
 
 ##  Analog Design Recommendations
@@ -435,7 +435,7 @@ Never rotate transistors
 
 Make sure bulk is close
 
-![](/dic2021/assets/2fingunit.png)
+![](/dic2021/assets/2fingunit.svg)
 
 
 

@@ -98,7 +98,7 @@ plt.savefig("l6_ni.pdf")
 plt.show()
 ```
 
-![](/dic2021/assets/l6_ni.png)
+![](/dic2021/assets/l6_ni.svg)
 
 
 ##  Passives
@@ -148,7 +148,7 @@ Often two types, with, and without silicide
 
 Silicide reduces resistance of polysilicon
 
-![](/dic2021/assets/poly.png)
+![](/dic2021/assets/poly.svg)
 
 
 # Diffusion
@@ -162,7 +162,7 @@ Non-linear capacitance
 Tricky temperature dependence
 
 
-![](/dic2021/assets/ndiff.png)
+![](/dic2021/assets/ndiff.svg)
 
 
 # Metal
@@ -174,7 +174,7 @@ Useful for "separating nets" in schematic and layout
 Must be considered for power supply and ground routing (high currents)
 
 
-![](/dic2021/assets/metal.png)
+![](/dic2021/assets/metal.svg)
 
 
 ##  Capacitors
@@ -197,12 +197,12 @@ Unit capacitance $$ \approx 1 fF/\mu m^2/layer $$
 
  $$ 10 pF = 100 \mu m \times 100 \mu m = 10 k \mu m^2$$
 
-![](/dic2021/assets/fig_capacitors_vertical.png)
+![](/dic2021/assets/fig_capacitors_vertical.svg)
 
 
 # MOS capacitors
 
-![](/dic2021/assets/inversion.png)
+![](/dic2021/assets/inversion.svg)
 
 
 
@@ -273,7 +273,7 @@ Device m1:
 
 
 
-![](/dic2021/assets/pn.png)
+![](/dic2021/assets/pn.svg)
 
 
 ##  Inductors
@@ -299,14 +299,14 @@ Relative precision for devices on same die $$ > 2 $$% or more
 
 Resistors and Capacitors can be matched extremely well
 
-![](/dic2021/assets/pres_good.png)
+![](/dic2021/assets/pres_good.svg)
 
 
 
 
 
 
-![](/dic2021/assets/pres_bad.png)
+![](/dic2021/assets/pres_bad.svg)
 
  $$ i_3 = 0  = i_1 - i_2$$ 
  $$ 0 = \frac{V_i - V_o}{R} - \frac{V_o}{1/sC} $$  
@@ -334,7 +334,7 @@ Many, many ways
 
 Reverse bias diodes to ground are useful for signals with long routing to transistor gate. Protects gate from breakdown during chemical mechanical polish.
 
-![](/dic2021/assets/diodes.png)
+![](/dic2021/assets/diodes.svg)
 
 
 # Electrostatic Discharge 
@@ -347,12 +347,12 @@ Standards for testing at [JEDEC](https://www.jedec.org/category/technology-focus
 ## But I just want a digital input, what do I need?
 
 
-![](/dic2021/assets/esd.png)
+![](/dic2021/assets/esd.svg)
 
 
 ##  Input buffer
 
-![](/dic2021/assets/fig_methodology.png)
+![](/dic2021/assets/fig_methodology.svg)
 
 
 

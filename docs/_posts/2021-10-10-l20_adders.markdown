@@ -79,7 +79,7 @@ math: true
 
 ### Half adder
 
-![](/dic2021/assets/half_adder.png)
+![](/dic2021/assets/half_adder.svg)
 
 
 
@@ -89,7 +89,7 @@ math: true
 ### Full adder
 
 
-![](/dic2021/assets/full_adder.png)
+![](/dic2021/assets/full_adder.svg)
 
 
 ### Full adder
@@ -99,7 +99,7 @@ $$ S = A \oplus B \oplus Ci$$
 $$ C = (A \oplus B)Ci + AB$$
 
 
-![](/dic2021/assets/full_adder_block.png)
+![](/dic2021/assets/full_adder_block.svg)
 
 
 
@@ -117,7 +117,7 @@ module adder (input logic [WIDTH-1:0] A,
 endmodule
 ```
 
-![](/dic2021/assets/adder_1bit.png)
+![](/dic2021/assets/adder_1bit.svg)
 
 ### 2-bit adder
 
@@ -133,7 +133,7 @@ module adder (input logic [WIDTH-1:0] A,
 endmodule
 ```
 
-![](/dic2021/assets/adder_2bit.png)
+![](/dic2021/assets/adder_2bit.svg)
 
 
 ### 4-bit adder
@@ -150,7 +150,7 @@ module adder (input logic [WIDTH-1:0] A,
 endmodule
 ```
 
-![](/dic2021/assets/adder_4bit.png)
+![](/dic2021/assets/adder_4bit.svg)
 
 
 ### 8-bit adder
@@ -167,7 +167,7 @@ module adder (input logic [WIDTH-1:0] A,
 endmodule
 ```
 
-![](/dic2021/assets/adder_8bit.png)
+![](/dic2021/assets/adder_8bit.svg)
 
 
 ### 16-bit adder
@@ -184,7 +184,7 @@ module adder (input logic [WIDTH-1:0] A,
 endmodule
 ```
 
-![](/dic2021/assets/adder_16bit.png)
+![](/dic2021/assets/adder_16bit.svg)
 
 
 ##  Straightforward adders become deep, can we make it better?

@@ -50,14 +50,14 @@ Show a few FSM examples
 
 An FSM where outputs depend on current state and inputs
 
-![](/dic2021/assets/blank.png)
+![](/dic2021/assets/blank.svg)
 
 # Moore machine
 
 
 An FSM where outputs depend on current state
 
-![](/dic2021/assets/blank.png)
+![](/dic2021/assets/blank.svg)
 
 
 # Mealy versus Moore
@@ -97,7 +97,7 @@ module counter(
 endmodule // counter
 ```
 
-![](/dic2021/assets/blank.png)
+![](/dic2021/assets/blank.svg)
 
 ## Battery charger FSM
 
@@ -147,7 +147,7 @@ Charging complete
 ![](/dic2021/assets/charge_graph.png)
 
 
-![](/dic2021/assets/bcharger.png)
+![](/dic2021/assets/bcharger.svg)
 
 ### One way to draw FSMs - Graphviz
 
@@ -181,7 +181,7 @@ digraph finite_state_machine {
 
 
 
-![](/dic2021/assets/bcharger.png)
+![](/dic2021/assets/bcharger.svg)
 
 ```verilog
 module bcharger( output logic trkl,
@@ -298,7 +298,7 @@ clean
 ```
 
 
-![](/dic2021/assets/bcharger_synth.png)
+![](/dic2021/assets/bcharger_synth.svg)
 
 
 

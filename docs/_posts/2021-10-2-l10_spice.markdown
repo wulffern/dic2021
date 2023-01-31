@@ -182,7 +182,7 @@ BSIM (Berkeley Short-channel IGFET Model)
 [http://bsim.berkeley.edu/models/bsim4/](http://bsim.berkeley.edu/models/bsim4/)
 
 
-![](/dic2021/assets/fig_transistor.png)
+![](/dic2021/assets/fig_transistor.svg)
 
 284 parameters in [BSIM 4.5](http://www-device.eecs.berkeley.edu/~bsim/Files/BSIM4/BSIM480/BSIM480_Manual.pdf)
 

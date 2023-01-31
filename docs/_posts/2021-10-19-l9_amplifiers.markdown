@@ -88,7 +88,7 @@ Assume strong inversion and active **$$ V_{eff} = \sqrt{\frac{2}{\mu_p C_{ox} \f
 $$M_1$$ is diode connected ($$V_G = V_D$$)
 
 
-![](/dic2021/assets/fig_cm.png)
+![](/dic2021/assets/fig_cm.svg)
 
 
 # Current mirror $$r_{in}$$
@@ -116,19 +116,19 @@ Output voltage does not affect $$v_{gs}$$
 
 # Source degeneration
 
-![](/dic2021/assets/fig_cmsf.png)
+![](/dic2021/assets/fig_cmsf.svg)
 
 What is the operating region of M3 and M4?
 
 What is the operating region of M1 and M2?
 
 
-![](/dic2021/assets/fig_cmsf.png)
+![](/dic2021/assets/fig_cmsf.svg)
 
-![](/dic2021/assets/nmos_ro.png)
+![](/dic2021/assets/nmos_ro.svg)
 
 
-![](/dic2021/assets/fig_cmsf.png)
+![](/dic2021/assets/fig_cmsf.svg)
 
 ![](/dic2021/assets/cmsdeg.png)
 
@@ -177,7 +177,7 @@ $$ r_{out} =  r_{ds2}\left[1 + r_{ds1}(g_{m2} + g_{ds2})\right] $$
 
 $$ r_{out} =  r_{ds2}[1 + r_{ds1}(g_{m2} + g_{ds1})] $$
 
-![](/dic2021/assets/nmos_ro.png)
+![](/dic2021/assets/nmos_ro.svg)
 
 
 
@@ -190,10 +190,10 @@ $$r_{ds2(\text{saturation})} > r_{ds2(\text{linear})} $$
 $$r_{out} =  r_{ds4}[1 + r_{ds2}(g_{m4} + g_{ds2})] $$
 
 
-![](/dic2021/assets/fig_cmCascode.png)
+![](/dic2021/assets/fig_cmCascode.svg)
 
 
-![](/dic2021/assets/fig_current_mirrors.png)
+![](/dic2021/assets/fig_current_mirrors.svg)
 
 
 # One more current mirror ...

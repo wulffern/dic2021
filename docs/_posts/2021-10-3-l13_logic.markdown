@@ -96,7 +96,7 @@ $$ V_{GS} < V_{TH}$$ when $$V_G = 0$$
 
 
 
-![](/dic2021/assets/rules.png)
+![](/dic2021/assets/rules.svg)
 
 
 
@@ -106,7 +106,7 @@ $$ V_{GS} < V_{TH}$$ when $$V_G = 0$$
 
 ##  Logic cells
 
-![](/dic2021/assets/binary.png)
+![](/dic2021/assets/binary.svg)
 
 
 ## CMOS static logic is inverting
@@ -121,7 +121,7 @@ $$ V_{GS} < V_{TH}$$ when $$V_G = 0$$
 ![](/dic2021/assets/inv.png)
 
 
-![](/dic2021/assets/pdpu.png)
+![](/dic2021/assets/pdpu.svg)
 
 <sub>PD = Pull-down PU = Pull-up</sub>
 
@@ -154,7 +154,7 @@ logic => [0,1,Z,X];
 | 1 | 0 | 1 |
 | 1 | 1 | Z |
 
-![](/dic2021/assets/pu_pmos.png)
+![](/dic2021/assets/pu_pmos.svg)
 
 [.table-separator: #000000, stroke-width(1)] 
 [.table: margin(8)]
@@ -177,7 +177,7 @@ logic => [0,1,Z,X];
 | 1 | 0 | 0 |
 | 1 | 1 | 0 |
 
-![](/dic2021/assets/pd_nmos.png)
+![](/dic2021/assets/pd_nmos.svg)
 
 
 ## Rules for inverting logic
@@ -283,7 +283,7 @@ $$\overline{A+B}  = \overline{A} \cdot \overline{B}$$
  $$ \overline{Q} = \overline{S Q} = \overline{S} +
 \overline{Q} = \overline{S} + \overline{Q} $$
 
-![](/dic2021/assets/sr.png)
+![](/dic2021/assets/sr.svg)
 
 
 # $$SR$$-Latch
@@ -298,7 +298,7 @@ $$ Q = \overline{R} + Q $$, $$ \overline{Q} =\overline{S} + \overline{Q} $$
 | 1 | 1 | Q | ~Q |
 
 
-![](/dic2021/assets/sr.png)
+![](/dic2021/assets/sr.svg)
 
 
 
@@ -313,7 +313,7 @@ $$ Q = \overline{R} + Q $$, $$ \overline{Q} =\overline{S} + \overline{Q} $$
 | 1 | 1 | 1 | 0 |
 
 
-![](/dic2021/assets/dlatch.png)
+![](/dic2021/assets/dlatch.svg)
 
 
 
@@ -351,14 +351,14 @@ $$ Q = \overline{R} + Q $$, $$ \overline{Q} =\overline{S} + \overline{Q} $$
 
  $$\text{Y} =  \overline{\text{AB} + \text{CD}}$$
  
-![](/dic2021/assets/an2oi.png)
+![](/dic2021/assets/an2oi.svg)
 
 A **Pos**traumatic **Pap**aya was walking on the Moon. **Nop**e, it was a **NAS**A astronaut.
 
 
 
 
-![](/dic2021/assets/inv_tg.png)
+![](/dic2021/assets/inv_tg.svg)
 
 [.table-separator: #000000, stroke-width(1)] 
 [.table: margin(8)]
@@ -372,7 +372,7 @@ A **Pos**traumatic **Pap**aya was walking on the Moon. **Nop**e, it was a **NAS*
 | 1 | 0 | 1 |
 | 1 | 1 | 0 |
 
-![](/dic2021/assets/ivtrix.png)
+![](/dic2021/assets/ivtrix.svg)
 
 
 [.table-separator: #000000, stroke-width(1)] 
@@ -387,18 +387,18 @@ A **Pos**traumatic **Pap**aya was walking on the Moon. **Nop**e, it was a **NAS*
 | 1 | NOT(P0) |
 | 1 | NOT(P0) |
 
-![](/dic2021/assets/mux.png)
+![](/dic2021/assets/mux.svg)
 
 D-Latch (12 transistors)
 
-![](/dic2021/assets/latch.png)
+![](/dic2021/assets/latch.svg)
 
 D-Flip Flop (< 26 transistors)
 
-![](/dic2021/assets/d_ff.png)
+![](/dic2021/assets/d_ff.svg)
 
 
-![](/dic2021/assets/digital_ff_comb.png)
+![](/dic2021/assets/digital_ff_comb.svg)
 
 
 
@@ -415,7 +415,7 @@ D-Flip Flop (< 26 transistors)
 Consider other types of logic "rule breaking", so you should know why you need it.
 
 
-![](/dic2021/assets/fig_sar_logic.png)
+![](/dic2021/assets/fig_sar_logic.svg)
 
 <sub><sub>Dynamic logic => [A Compiled 9-bit 20-MS/s 3.5-fJ/conv.step SAR ADC in 28-nm FDSOI for Bluetooth Low Energy Receivers](https://ieeexplore.ieee.org/document/7906479)</sub></sub>
 

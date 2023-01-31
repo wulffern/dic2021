@@ -65,7 +65,7 @@ photon sensor $$\Rightarrow$$ local analog to digital converter $$\Rightarrow$$ 
 # SENSOR
 
 
-![](/dic2021/assets/photogate.png)
+![](/dic2021/assets/photogate.svg)
 
 
 # COMP
@@ -145,12 +145,12 @@ endmodule // graycounter
 ```
 
 
-![](/dic2021/assets/graycounter.png)
-![](/dic2021/assets/counter.png)
+![](/dic2021/assets/graycounter.svg)
+![](/dic2021/assets/counter.svg)
 
 
 
-![](/dic2021/assets/sensor.png)
+![](/dic2021/assets/sensor.svg)
 
 
 
@@ -191,7 +191,7 @@ Provide analog-to-digital and digital-to-analog converters to "mirror" signals i
 
 Not sure there is an open source mixed-signal simulator
 
-![](/dic2021/assets/mixedsims.png)
+![](/dic2021/assets/mixedsims.svg)
 
 
 # What you get
