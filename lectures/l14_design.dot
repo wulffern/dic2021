@@ -1,0 +1,5 @@
+diagraph G{
+Design (SystemVerilog) -> Simulation (iverilog/vpp/gtkwave)
+Simulation (iverilog/vpp/gtkwave) -> Synthesis (yosys)
+Timing analysis (OpenTimer)
+}
